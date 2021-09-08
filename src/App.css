@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-wrapper {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.display-wrapper {
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: [col1-start] minmax(175px, 20%)  [col2-start] auto  [col3-start] auto ;
+  grid-template-rows: [row1-start] 20px [row2-start] auto [row3-start] auto [row4-start] auto [row4-end] ;
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+}
+
+.top-container {
+  grid-column: col1-start / span 3;
+  grid-row: row1-start;
+  background-color: var(--lcars-gold);
+  border-radius: 20px 0 0 0;
+}
+
+.left-container {
+  grid-column: col1-start ;
+  grid-row: row2-start / row2-end;
+  background-color: var(--lcars-gold);
+  border-radius: 0 0 0 20px;
+}
+
+.bottom-container {
+  grid-column: col1-start / span 3 ;
+  grid-row: row4-end;
+  background-color: var(--lcars-gold);
+  align-self: end;
+  border-radius: 0 0 0 20px;
+  z-index: 1;
+  height: 20px;
+}
+
+.center-panel {
+  grid-column: col2-start / span 2;
+  grid-row: row2-start / span 4;
+  background-color: black;
+  z-index: 0;
+}
+
+.center-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.center-content h1 {
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  color: #ffaa90;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center-content h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: #aaaaff;
+}
+
+.left-menu {
+  height: 100%;
+  text-align: right;
+}
+
+.logo {
+  max-width: 300px;
 }

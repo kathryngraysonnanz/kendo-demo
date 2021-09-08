@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import '@progress/kendo-theme-default/dist/all.css';
+import { Button } from '@progress/kendo-react-buttons'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello World, I'm Kathryn
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div className={'page-wrapper'}>
+          <div className={'display-wrapper'}>
+            <div class="left-container">
+              <div class="left-menu">
+                <Button look="flat">Crew Manifest</Button>
+              </div>
+            </div>
+            <div class="top-container"></div>
+            <div class="bottom-container"></div>
+            <div class="center-panel">
+               <div class="center-content">
+                  <div class="welcome">
+                    <img src="http://trekipedia.com/mw/images/a/ae/ufp_logo-fasa2012_color.jpg" class="logo"/>
+                    <h1>LCARS terminal active</h1>
+                    <h2>Systems online</h2>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
