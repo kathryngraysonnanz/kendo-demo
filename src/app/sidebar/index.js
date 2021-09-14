@@ -2,30 +2,33 @@ import React, {Component} from 'react';
 import './sidebar.scss';
 import '@progress/kendo-theme-default/dist/all.css';
 import { Button } from '@progress/kendo-react-buttons'
+import { Link } from "react-router-dom";
 
 export class NavMenu extends Component {
   render() {
     return (
 <nav class="left-menu">
   <div class="menu">
-    <Button look="flat">Crew Manifest</Button>
+    <Link to='/manifest'>
+      Crew Manifest
+    </Link>
     {/* data grid */}
   </div>
   <div class="menu">
-  <Button look="flat">Ship Diagnostics</Button>
+  <Link to='/diagnostics'>Ship Diagnostics</Link>
     {/* chart, progress bars */}
     </div>
   <div class="menu">
-  <Button look="flat">Engineering Console</Button>
+  <Link to='/engineering'>Engineering Console</Link>
   </div>
   <div class="menu">
-  <Button look="flat">Weapons Array</Button>
+  <Link to='/weapons'>Weapons Array</Link>
   </div>
   <div class="menu">
-  <Button look="flat">Data Bank</Button>
+  <Link to='/data'>Data Bank</Link>
   </div>
   <div class="menu">
-  <Button look="flat">Calendar</Button>
+  <Link to='/schedule'>Schedule</Link>
   </div>
 </nav>
 )}

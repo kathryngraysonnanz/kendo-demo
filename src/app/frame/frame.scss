@@ -17,6 +17,7 @@
   }
 }
 
+
 .top-container {
   grid-column: col1-start / span 3;
   grid-row: row1-start;
@@ -36,6 +37,22 @@
   grid-row: row2-start / span 4;
   background-color: black;
   z-index: 0;
+}
+
+.corner-background {
+  width: 50px;
+    height: 40px;
+    background: var(--lcars-gold);
+    grid-column: col2-start;
+    grid-row: row2-start / span 4;
+    z-index: 99;
+
+    .corner {
+      width: 50px;
+        height: 40px;
+        background: #000;
+        border-radius: 40px 0 0 0;
+    }
 }
 
 .center-content {
