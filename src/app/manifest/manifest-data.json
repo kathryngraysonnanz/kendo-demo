@@ -1,0 +1,452 @@
+[
+    {
+      "uid": "ASMA0000001040",
+      "name": "Rubicun III",
+      "astronomicalObjectType": "M_CLASS_PLANET",
+      "location": {
+        "uid": "ASMA0000009464",
+        "name": "Rubicun system"
+      }
+    },
+    {
+      "uid": "ASMA0000009295",
+      "name": "Capella IV",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000010998",
+        "name": "Capella"
+      }
+    },
+    {
+      "uid": "ASMA0000003565",
+      "name": "Benzar",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000010368",
+        "name": "Benzite system"
+      }
+    },
+    {
+      "uid": "ASMA0000019230",
+      "name": "Kurl",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000045675",
+        "name": "Kurlan system"
+      }
+    },
+    {
+      "uid": "ASMA0000010004",
+      "name": "Orellius Minor",
+      "astronomicalObjectType": "STAR",
+      "location": {
+        "uid": "ASMA0000013143",
+        "name": "Orellius system"
+      }
+    },
+    {
+      "uid": "ASMA0000214708",
+      "name": "Orellius",
+      "astronomicalObjectType": "M_CLASS_PLANET",
+      "location": {
+        "uid": "ASMA0000013143",
+        "name": "Orellius system"
+      }
+    },
+    {
+      "uid": "ASMA0000009684",
+      "name": "Bopak III",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000009685",
+        "name": "Bopak system"
+      }
+    },
+    {
+      "uid": "ASMA0000024125",
+      "name": "Straleb",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000014987",
+        "name": "Omega Sagitta system"
+      }
+    },
+    {
+      "uid": "ASMA0000022576",
+      "name": "Atlec",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000014987",
+        "name": "Omega Sagitta system"
+      }
+    },
+    {
+      "uid": "ASMA0000012630",
+      "name": "Xanthras III",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000015327",
+        "name": "Xanthras system"
+      }
+    },
+    {
+      "uid": "ASMA0000097049",
+      "name": "Tarsas III",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000000719",
+        "name": "Sector 001"
+      }
+    },
+    {
+      "uid": "ASMA0000193555",
+      "name": "Tarsas IV",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000000719",
+        "name": "Sector 001"
+      }
+    },
+    {
+      "uid": "ASMA0000001073",
+      "name": "40 Eridani A",
+      "astronomicalObjectType": "STAR",
+      "location": {
+        "uid": "ASMA0000000719",
+        "name": "Sector 001"
+      }
+    },
+    {
+      "uid": "ASMA0000168985",
+      "name": "Rhea",
+      "astronomicalObjectType": "MOON",
+      "location": {
+        "uid": "ASMA0000003125",
+        "name": "Saturn"
+      }
+    },
+    {
+      "uid": "ASMA0000003129",
+      "name": "Titan",
+      "astronomicalObjectType": "MOON",
+      "location": {
+        "uid": "ASMA0000003125",
+        "name": "Saturn"
+      }
+    },
+    {
+      "uid": "ASMA0000013891",
+      "name": "Mimas",
+      "astronomicalObjectType": "MOON",
+      "location": {
+        "uid": "ASMA0000003125",
+        "name": "Saturn"
+      }
+    },
+    {
+      "uid": "ASMA0000205209",
+      "name": "Xendi Sabu II",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000000803",
+        "name": "Xendi Sabu system"
+      }
+    },
+    {
+      "uid": "ASMA0000000546",
+      "name": "Sirius IX",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000005711",
+        "name": "Sirius"
+      }
+    },
+    {
+      "uid": "ASMA0000012511",
+      "name": "Ilidaria",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000190118",
+        "name": "Ilidaria system"
+      }
+    },
+    {
+      "uid": "ASMA0000004379",
+      "name": "Calindra system",
+      "astronomicalObjectType": "STAR_SYSTEM",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000212477",
+      "name": "Azati Prime",
+      "astronomicalObjectType": "STAR",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000004298",
+      "name": "Xanthan homeworld",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000004297",
+      "name": "Norellus",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000004305",
+      "name": "Oran'taku",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000004484",
+      "name": "Xindi-Arboreal colony",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000178104",
+      "name": "Xindus",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000019591",
+      "name": "Loque'eque homeworld",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000005100",
+      "name": "Xindi Council planet",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000004360",
+      "name": "Tarquin's planet",
+      "astronomicalObjectType": "M_CLASS_PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000004355",
+      "name": "Arakon system",
+      "astronomicalObjectType": "STAR_SYSTEM",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000061035",
+      "name": "Skagaran colony",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001993",
+        "name": "Delphic Expanse"
+      }
+    },
+    {
+      "uid": "ASMA0000022661",
+      "name": "Gamma II",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000009010",
+        "name": "Gamma system"
+      }
+    },
+    {
+      "uid": "ASMA0000232907",
+      "name": "Draken",
+      "astronomicalObjectType": "STAR",
+      "location": {
+        "uid": "ASMA0000165362",
+        "name": "Draken system"
+      }
+    },
+    {
+      "uid": "ASMA0000012629",
+      "name": "Draken IV",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000165362",
+        "name": "Draken system"
+      }
+    },
+    {
+      "uid": "ASMA0000004515",
+      "name": "Founders' homeworld",
+      "astronomicalObjectType": "ROGUE_PLANET",
+      "location": {
+        "uid": "ASMA0000008403",
+        "name": "Omarion Nebula"
+      }
+    },
+    {
+      "uid": "ASMA0000012212",
+      "name": "Aldea",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000037360",
+        "name": "Epsilon Mynos system"
+      }
+    },
+    {
+      "uid": "ASMA0000165524",
+      "name": "Archanis",
+      "astronomicalObjectType": "STAR",
+      "location": {
+        "uid": "ASMA0000010726",
+        "name": "Archanis sector"
+      }
+    },
+    {
+      "uid": "ASMA0000016399",
+      "name": "Epsilon Canaris III",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000016714",
+        "name": "Epsilon Canaris"
+      }
+    },
+    {
+      "uid": "ASMA0000001204",
+      "name": "Deneb V",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001921",
+        "name": "Deneb"
+      }
+    },
+    {
+      "uid": "ASMA0000007550",
+      "name": "Deneb II",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001921",
+        "name": "Deneb"
+      }
+    },
+    {
+      "uid": "ASMA0000059717",
+      "name": "Deneb IV",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001921",
+        "name": "Deneb"
+      }
+    },
+    {
+      "uid": "ASMA0000047466",
+      "name": "Deneb XX",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000001921",
+        "name": "Deneb"
+      }
+    },
+    {
+      "uid": "ASMA0000015074",
+      "name": "Trialus system",
+      "astronomicalObjectType": "STAR_SYSTEM",
+      "location": {
+        "uid": "ASMA0000010653",
+        "name": "Borderland"
+      }
+    },
+    {
+      "uid": "ASMA0000010938",
+      "name": "Verex III",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000010653",
+        "name": "Borderland"
+      }
+    },
+    {
+      "uid": "ASMA0000011932",
+      "name": "Trialas system",
+      "astronomicalObjectType": "STAR_SYSTEM",
+      "location": {
+        "uid": "ASMA0000010653",
+        "name": "Borderland"
+      }
+    },
+    {
+      "uid": "ASMA0000006563",
+      "name": "Devolin system",
+      "astronomicalObjectType": "STAR_SYSTEM",
+      "location": {
+        "uid": "ASMA0000042683",
+        "name": "Sector 1607"
+      }
+    },
+    {
+      "uid": "ASMA0000064849",
+      "name": "Dosi homeworld",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000002016",
+        "name": "Gamma Quadrant"
+      }
+    },
+    {
+      "uid": "ASMA0000016708",
+      "name": "Gaia",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000002016",
+        "name": "Gamma Quadrant"
+      }
+    },
+    {
+      "uid": "ASMA0000064338",
+      "name": "Stakoron II",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000002016",
+        "name": "Gamma Quadrant"
+      }
+    },
+    {
+      "uid": "ASMA0000009326",
+      "name": "Vandros IV",
+      "astronomicalObjectType": "PLANET",
+      "location": {
+        "uid": "ASMA0000002016",
+        "name": "Gamma Quadrant"
+      }
+    }
+  ]

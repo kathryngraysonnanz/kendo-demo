@@ -10,9 +10,8 @@ export class NavMenu extends Component {
 <nav class="left-menu">
   <div class="menu">
     <Link to='/manifest'>
-      Crew Manifest
+      Astrometrics Console
     </Link>
-    {/* data grid */}
   </div>
   <div class="menu">
   <Link to='/diagnostics'>Ship Diagnostics</Link>

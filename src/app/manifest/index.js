@@ -2,40 +2,77 @@ import React, {Component} from 'react';
 import './manifest.scss';
 import '@progress/kendo-theme-default/dist/all.css';
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
+import { orderBy, process } from "@progress/kendo-data-query";
+import {
+  GridColumnMenuSort,
+  GridColumnMenuFilter,
+  GridColumnMenuGroup,
+} from "@progress/kendo-react-grid";
 import Frame from '../frame'
+import manifestData from "./manifest-data.json";
 
-export default class extends Component {
-  render() {
-    return (
-       <Frame>
-          <div class="manifest-wrapper">
-            <h1>Crew Manifest</h1>
-            <Grid
-              style={{
-                height: "400px",
-              }}
-              data={products}
-            >
-              <Column field="ProductID" title="ID" width="40px" />
-              <Column field="ProductName" title="Name" width="250px" />
-              <Column field="Category.CategoryName" title="CategoryName" />
-              <Column field="UnitPrice" title="Price" />
-              <Column field="UnitsInStock" title="In stock" />
-              <Column
-                field="Discontinued"
-                cell={(props) => (
-                  <td>
-                    <input
-                      disabled={true}
-                      type="checkbox"
-                      checked={props.dataItem[props.field || ""]}
-                    />
-                  </td>
-                )}
-              />
-            </Grid>
-          </div>
-       </Frame>
-    )
-  }
+const initialSort = [
+  {
+    field: "name",
+    dir: "asc",
+  },
+];
+
+const createDataState = (dataState) => {
+  return {
+    result: process(manifestData.slice(0), dataState),
+    dataState: dataState,
+  };
+};
+
+
+export const ColumnMenu = (props) => {
+  return (
+    <div>
+      <GridColumnMenuSort {...props} />
+      <GridColumnMenuFilter {...props} />
+      <GridColumnMenuGroup {...props} />
+    </div>
+  );
+};
+
+export default function AstronomicalLog() {
+
+  let initialState = createDataState({
+
+  });
+
+  const [sort, setSort] = React.useState(initialSort);
+  const [result, setResult] = React.useState(initialState.result);
+  const [dataState, setDataState] = React.useState(initialState.dataState);
+  const dataStateChange = (event) => {
+    let updatedState = createDataState(event.dataState);
+    setResult(updatedState.result);
+    setDataState(updatedState.dataState);
+  };
+
+
+  return (
+     <Frame>
+        <div class="manifest-wrapper">
+          <h1>Astrometrics Console</h1>
+          <h2>Recently Encountered Astrological Objects</h2>
+          <Grid
+            style={{
+              height: "90%",
+              width: "100%"
+            }}
+            data={result}
+            {...dataState}
+            onDataStateChange={dataStateChange}
+            sortable={true}
+            resizable={true}
+          >
+            <Column field="name" title="Name" columnMenu={ColumnMenu} />
+            <Column field="astronomicalObjectType" title="Object Type" columnMenu={ColumnMenu} />
+            <Column field="location.name" title="Location" columnMenu={ColumnMenu}/>
+          </Grid>
+        </div>
+     </Frame>
+  )
 }

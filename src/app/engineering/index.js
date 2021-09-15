@@ -11,6 +11,7 @@ function Engineering() {
     return (
       <Frame>
         <div class='engineering-wrapper'>
+        <h1>Engineering Console</h1>
           <GridLayout
              gap={{ rows: 15, cols: 15 }}
              rows={[
