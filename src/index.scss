@@ -6,9 +6,29 @@
   --lcars-lavender: #cc88ff;
   --lcars-sunflower: #ffcc66;
   --lcars-red: #dd4444;
+  --lcars-brown: #aaaaff;
 }
 
 body {
   font-family: 'Antonio', serif;
   margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--lcars-almond);
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--lcars-lavender);
+}
+
+p {
+  color: white;
+  margin: 0px;
 }

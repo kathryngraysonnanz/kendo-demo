@@ -18,9 +18,7 @@ export default class extends Component {
               <div class="corner"></div>
              </div>
             <div class="center-panel">
-               <div class="center-content">
-                  { this.props.children }
-               </div>
+               { this.props.children }
             </div>
           </div>
         </div>

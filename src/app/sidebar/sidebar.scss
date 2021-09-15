@@ -11,14 +11,17 @@
   justify-content: flex-end;
   align-items: flex-end;
   height: auto;
+  padding: 10px;
 
-  button {
+  a {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     font-size: 1.1rem;
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -33,7 +36,7 @@
 .left-menu > div:nth-child(3) {
   grid-row: 3 / 5;
 
-  button {
+  a {
     align-items: flex-start;
   }
 }
@@ -47,7 +50,7 @@
   grid-row: 7 / 10;
   display: flex;
 
-  button {
+  a {
     align-items: flex-start;
   }
 }

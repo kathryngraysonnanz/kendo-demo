@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from '../home'
 import Manifest from '../manifest'
+import Engineering from '../engineering'
 
 export default function App() {
   return (
@@ -13,6 +14,8 @@ export default function App() {
       <Switch>
         <Route path="/manifest"
           component={Manifest} />
+          <Route path="/engineering"
+            component={Engineering} />
         <Route path="/">
           <Home/>
         </Route>
