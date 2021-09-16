@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './frame.scss';
 import "../../../src/index.scss";
-import { Button } from '@progress/kendo-react-buttons'
+import { Chip } from '@progress/kendo-react-buttons'
 import { NavMenu } from '../sidebar'
 
 export default class extends Component {
@@ -16,6 +16,12 @@ export default class extends Component {
             <div class="top-container"></div>
             <div class="corner-background">
               <div class="corner"></div>
+             </div>
+             <div class="user">
+               <Chip removable={false}>
+                  <span className="k-chip-label">Authorized User: Captain Kathryn Janeway</span>
+                  <span className="k-icon k-i-user" />
+                </Chip>
              </div>
             <div class="center-panel">
                { this.props.children }

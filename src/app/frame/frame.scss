@@ -16,7 +16,6 @@
   }
 }
 
-
 .top-container {
   grid-column: col1-start / span 3;
   grid-row: row1-start;
@@ -37,6 +36,20 @@
   background-color: black;
   z-index: 0;
   padding: 40px;
+}
+
+.user {
+  grid-column: col3-start / span 1;
+  grid-row: row2-start;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 5px 0 5px;
+
+  .k-chip-content {
+    color: black;
+  }
 }
 
 .corner-background {

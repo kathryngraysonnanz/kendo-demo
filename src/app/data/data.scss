@@ -6,4 +6,19 @@
 
 .k-breadcrumb {
   background-color: black;
+  text-transform: uppercase;
+}
+
+.category-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  div {
+    margin-left: 20px;
+
+    button {
+      margin: 5px 5px;
+    }
+  }
 }

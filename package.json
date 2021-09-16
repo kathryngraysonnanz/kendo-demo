@@ -19,6 +19,7 @@
     "@progress/kendo-react-layout": "^4.9.0",
     "@progress/kendo-react-pivotgrid": "^4.9.0",
     "@progress/kendo-react-progressbars": "^4.9.0",
+    "@progress/kendo-react-tooltip": "^4.9.0",
     "@progress/kendo-react-treeview": "^4.9.0",
     "@progress/kendo-theme-default": "^4.41.0",
     "@testing-library/jest-dom": "^5.14.1",

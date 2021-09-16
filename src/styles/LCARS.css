@@ -9213,6 +9213,7 @@ script {
     line-height: normal;
     font-weight: 300;
     margin: 0 0 14px;
+    text-transform: uppercase;
 }
 
 .k-h2 {
@@ -9221,6 +9222,7 @@ script {
     line-height: normal;
     font-weight: 400;
     margin: 0 0 14px;
+    text-transform: uppercase;
 }
 
 .k-h3 {
@@ -9229,6 +9231,7 @@ script {
     line-height: normal;
     font-weight: 700;
     margin: 0 0 14px;
+    text-transform: uppercase;
 }
 
 .k-h4 {
@@ -9237,6 +9240,7 @@ script {
     line-height: normal;
     font-weight: 700;
     margin: 0 0 14px;
+    text-transform: uppercase;
 }
 
 .k-h5 {
@@ -9245,6 +9249,7 @@ script {
     line-height: normal;
     font-weight: 400;
     margin: 0 0 14px;
+    text-transform: uppercase;
 }
 
 .k-h6 {
@@ -9253,6 +9258,7 @@ script {
     line-height: normal;
     font-weight: 400;
     margin: 0 0 14px;
+    text-transform: uppercase;
 }
 
 .k-display-1 {
@@ -9260,6 +9266,7 @@ script {
     font-size: 84px;
     line-height: 1.2;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .k-display-2 {
@@ -9267,6 +9274,7 @@ script {
     font-size: 70px;
     line-height: 1.2;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .k-display-3 {
@@ -9274,6 +9282,7 @@ script {
     font-size: 56px;
     line-height: 1.2;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .k-display-4 {
@@ -9281,6 +9290,7 @@ script {
     font-size: 42px;
     line-height: 1.2;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .k-avatar {
@@ -10965,6 +10975,7 @@ kendo-badge-container {
     font-family: inherit;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     white-space: nowrap;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -36779,4 +36790,8 @@ div.k-scrollview.k-scrollview-light .k-scrollview-nav-wrap {
 
 .k-map .k-attribution {
     background-color: rgba(102, 102, 136, 0.8);
+}
+
+a {
+  text-transform: uppercase;
 }
