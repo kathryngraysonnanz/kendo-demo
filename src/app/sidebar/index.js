@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import './sidebar.scss';
-import '@progress/kendo-theme-default/dist/all.css';
-import { Button } from '@progress/kendo-react-buttons'
 import { Link } from "react-router-dom";
 
 export class NavMenu extends Component {
@@ -9,7 +7,7 @@ export class NavMenu extends Component {
     return (
 <nav class="left-menu">
   <div class="menu">
-    <Link to='/manifest'>
+    <Link to='/astrometrics'>
       Astrometrics Console
     </Link>
   </div>

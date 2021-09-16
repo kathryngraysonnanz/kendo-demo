@@ -13,3 +13,7 @@
   width: 100%;
   height: 100%;
 }
+
+.k-chart-surface svg > g > path:first-child {
+  fill: black;
+}

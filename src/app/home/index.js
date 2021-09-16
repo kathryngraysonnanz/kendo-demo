@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import './home.scss';
-import '@progress/kendo-theme-default/dist/all.css';
-import { Button } from '@progress/kendo-react-buttons'
 import { NavMenu } from '../sidebar'
 import Frame from '../frame'
 

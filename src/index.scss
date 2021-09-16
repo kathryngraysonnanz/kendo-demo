@@ -4,7 +4,7 @@
   --lcars-gold: #FFCC66;
   --lcars-almond: #ffaa90;
   --lcars-lavender: #cc88ff;
-  --lcars-sunflower: #ffcc66;
+  --lcars-sunflower: #ffaa00;
   --lcars-red: #dd4444;
   --lcars-brown: #aaaaff;
 }
@@ -32,3 +32,5 @@ p {
   color: white;
   margin: 0px;
 }
+
+@import 'styles/LCARS.scss';

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import './manifest.scss';
-import '@progress/kendo-theme-default/dist/all.css';
+import './astrometrics.scss';
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
 import { orderBy, process } from "@progress/kendo-data-query";
 import {
@@ -9,7 +8,7 @@ import {
   GridColumnMenuGroup,
 } from "@progress/kendo-react-grid";
 import Frame from '../frame'
-import manifestData from "./manifest-data.json";
+import astroData from "./astro-data.json";
 
 const initialSort = [
   {
@@ -20,7 +19,7 @@ const initialSort = [
 
 const createDataState = (dataState) => {
   return {
-    result: process(manifestData.slice(0), dataState),
+    result: process(astroData.slice(0), dataState),
     dataState: dataState,
   };
 };

@@ -3,18 +3,18 @@ import * as ReactDOM from 'react-dom';
 import { ArcGauge } from '@progress/kendo-react-gauges';
 const colors = [{
   to: 25,
-  color: '#0058e9'
+  color: '#33cc99'
 }, {
   from: 25,
   to: 50,
-  color: '#37b400'
+  color: '#ffcc66'
 }, {
   from: 50,
   to: 75,
-  color: '#ffc000'
+  color: '#FFCC66'
 }, {
   from: 75,
-  color: '#f31700'
+  color: '#dd4444'
 }];
 
 const ArcGaugeComponent = () => {

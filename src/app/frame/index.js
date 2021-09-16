@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './frame.scss';
-import '@progress/kendo-theme-default/dist/all.css';
+import "../../../src/index.scss";
 import { Button } from '@progress/kendo-react-buttons'
 import { NavMenu } from '../sidebar'
 
