@@ -4,6 +4,12 @@ import { Button } from '@progress/kendo-react-buttons'
 import { Breadcrumb } from "@progress/kendo-react-layout";
 import { Tooltip } from "@progress/kendo-react-tooltip";
 import Frame from '../frame'
+import {
+  Form,
+  Field,
+  FormElement,
+  FieldWrapper,
+} from "@progress/kendo-react-form";
 
 let items = [
   {
@@ -27,7 +33,6 @@ export default class DataBank extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state.data)
 
     fetch("http://stapi.co/api/v1/rest/animal/search")
       .then(res => res.json())
@@ -62,11 +67,7 @@ export default class DataBank extends Component {
   }
 
   reset(){
-    let num = Object.keys(this.state.data).length
-
-    if (num = 1 ) {
       this.setState({category: null});
-    }
   }
 
 render () {
@@ -126,6 +127,7 @@ render () {
 
        { this.state.category != null &&
          <div>
+          <h2> Search {this.state.category}</h2>
 
          </div>
        }

@@ -17,3 +17,8 @@
 .k-chart-surface svg > g > path:first-child {
   fill: black;
 }
+
+.pivot-wrapper {
+  max-height: 300px;
+  overflow: scroll;
+}
