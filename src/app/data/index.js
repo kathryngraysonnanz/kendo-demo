@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './data.scss';
 import { Button } from '@progress/kendo-react-buttons'
-import { Breadcrumb } from "@progress/kendo-react-layout";
+import { Breadcrumb, StackLayout } from "@progress/kendo-react-layout";
 import { Tooltip } from "@progress/kendo-react-tooltip";
 import Frame from '../frame'
 import {
@@ -106,7 +106,7 @@ render () {
         onKeyDown={handleKeyDown}
       />
       { this.state.category == null &&
-        <div class="category-wrapper">
+        <StackLayout orientation={"horizontal"} align={{horizontal: 'start', vertical: 'middle'}} gap={15}>
           <Tooltip anchorElement="pointer" position="bottom" parentTitle={true}>
             <svg height="162.147" width="100.041" version="1.1">
               <title>Badgey says: "Can I help you find something?"</title>
@@ -118,11 +118,13 @@ render () {
           </Tooltip>
           <div>
             <h2>Select a research category:</h2>
-            <Button onClick={()=>this.updateCategory('species')}>Alien Species</Button>
-            <Button onClick={()=>this.updateCategory('character')}>Notable Individuals</Button>
-            <Button onClick={()=>this.updateCategory('spacecraft')}>Spacecraft</Button>
+            <StackLayout orientation={"horizontal"} gap={30}>
+              <Button onClick={()=>this.updateCategory('species')}>Alien Species</Button>
+              <Button onClick={()=>this.updateCategory('character')}>Notable Individuals</Button>
+              <Button onClick={()=>this.updateCategory('spacecraft')}>Spacecraft</Button>
+            </StackLayout>
           </div>
-        </div>
+        </StackLayout>
        }
 
        { this.state.category != null &&

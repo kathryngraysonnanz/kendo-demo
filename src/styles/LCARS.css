@@ -9198,7 +9198,7 @@ script {
 }
 
 .k-typography {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.4285714286;
     font-weight: 400;
 }
@@ -9209,55 +9209,55 @@ script {
 
 .k-h1 {
     font-family: inherit;
-    font-size: 28px;
+    font-size: 2rem;
     line-height: normal;
-    font-weight: 300;
-    margin: 0 0 14px;
+    font-weight: bold;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .k-h2 {
     font-family: inherit;
-    font-size: 18px;
+    font-size: 1.7rem;
     line-height: normal;
-    font-weight: 400;
-    margin: 0 0 14px;
+    font-weight: bold;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .k-h3 {
     font-family: inherit;
-    font-size: 14px;
+    font-size: 1.2rem;
     line-height: normal;
     font-weight: 700;
-    margin: 0 0 14px;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .k-h4 {
     font-family: inherit;
-    font-size: 12px;
+    font-size: 1rem;
     line-height: normal;
     font-weight: 700;
-    margin: 0 0 14px;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .k-h5 {
     font-family: inherit;
-    font-size: 12px;
+    font-size: 0.8rem;
     line-height: normal;
     font-weight: 400;
-    margin: 0 0 14px;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .k-h6 {
     font-family: inherit;
-    font-size: 12px;
+    font-size: 0.8rem;
     line-height: normal;
     font-weight: 400;
-    margin: 0 0 14px;
+    margin: 0;
     text-transform: uppercase;
 }
 

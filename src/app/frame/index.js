@@ -20,7 +20,7 @@ export default class extends Component {
              <div class="user">
                <Chip removable={false}>
                   <span className="k-chip-label">Authorized User: Captain Kathryn Janeway</span>
-                  <span className="k-icon k-i-user" />
+                  <span className="k-icon k-i-user"/>
                 </Chip>
              </div>
             <div class="center-panel">
