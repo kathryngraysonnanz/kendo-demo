@@ -95,16 +95,15 @@ render () {
       }
     };
 
-
-
   return (
     <Frame>
-      <h1>Data Bank</h1>
-      <Breadcrumb
-        data={this.state.data}
-        onItemSelect={handleItemSelect}
-        onKeyDown={handleKeyDown}
-      />
+      <div class="data-wrapper">
+        <h1>Data Bank</h1>
+        <Breadcrumb
+          data={this.state.data}
+          onItemSelect={handleItemSelect}
+          onKeyDown={handleKeyDown}
+        />
       { this.state.category == null &&
         <StackLayout orientation={"horizontal"} align={{horizontal: 'start', vertical: 'middle'}} gap={15}>
           <Tooltip anchorElement="pointer" position="bottom" parentTitle={true}>
@@ -133,6 +132,7 @@ render () {
 
          </div>
        }
+       </div>
     </Frame>
 
 

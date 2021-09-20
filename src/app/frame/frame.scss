@@ -1,9 +1,8 @@
 .page-wrapper {
   background-color: black;
   height: 100vh;
+  width: calc(100% - 30px);
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   padding: 20px 0 0 20px;
 
   .display-wrapper {
@@ -36,6 +35,8 @@
   background-color: black;
   z-index: 0;
   padding: 40px;
+  max-width: 100%;
+  overflow: scroll;
 }
 
 .user {

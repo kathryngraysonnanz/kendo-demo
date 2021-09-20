@@ -1,10 +1,15 @@
-.manifest-wrapper {
+.data-wrapper {
   width: 100%;
   height: 100%;
   max-height: calc(100vh - 100px);
-}
 
-.k-breadcrumb {
-  background-color: black;
-  text-transform: uppercase;
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .k-breadcrumb {
+    background-color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 }
