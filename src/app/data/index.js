@@ -116,10 +116,7 @@ render () {
               </g>
             </svg>
           </Tooltip>
-          <div>
-          <h2>Select a media type:</h2>
-          <MultiSelect/>
-          </div>
+
           <div>
             <h2>Select a research category:</h2>
             <StackLayout orientation={"horizontal"} gap={30}>
@@ -135,7 +132,10 @@ render () {
        { this.state.category != null &&
          <div>
           <h2> Search {this.state.category}</h2>
-
+          <div>
+          <h3>Filter by media type:</h3>
+          <MultiSelect/>
+          </div>
          </div>
        }
        </div>
