@@ -12,8 +12,7 @@ export class NavMenu extends Component {
     </Link>
   </div>
   <div class="menu">
-  <Link to='/diagnostics'>Ship Diagnostics</Link>
-    {/* chart, progress bars */}
+  <Link to='/manifest'>Crew Manifest</Link>
     </div>
   <div class="menu">
   <Link to='/engineering'>Engineering Console</Link>

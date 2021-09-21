@@ -9,6 +9,7 @@ import AstronomicalLog from '../astrometrics'
 import Engineering from '../engineering'
 import DataBank from '../data'
 import Schedule from '../schedule'
+import Manifest from '../manifest'
 
 export default function App() {
   return (
@@ -22,6 +23,8 @@ export default function App() {
             component={DataBank} />
         <Route path="/schedule"
             component={Schedule} />
+        <Route path="/manifest"
+            component={Manifest} />
         <Route path="/">
           <Home/>
         </Route>
