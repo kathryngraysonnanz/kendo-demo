@@ -12,6 +12,8 @@ import {
   extendDataItem,
   GanttTextFilter,
   GanttDateFilter,
+  getSelectedState,
+  getSelectedStateFromKeyDown,
 } from "@progress/kendo-react-gantt";
 import { getter } from "@progress/kendo-react-common";
 import Frame from '../frame'
@@ -32,6 +34,7 @@ const taskModelFields = {
   isExpanded: "isExpanded",
   isInEdit: "isInEdit",
   children: "children",
+  isSelected: "isSelected",
 };
 const dependencyModelFields = {
   id: "id",
@@ -42,74 +45,115 @@ const dependencyModelFields = {
 const getTaskId = getter(taskModelFields.id);
 const columns = [
   {
-    field: taskModelFields.id,
-    title: "ID",
-    width: 70,
-  },
-  {
     field: taskModelFields.title,
     title: "Title",
     width: 200,
     expandable: true,
-    filter: GanttTextFilter,
   },
   {
     field: taskModelFields.start,
     title: "Start",
-    width: 120,
+    width: 85,
     format: "{0:MM/dd/yyyy}",
-    filter: GanttDateFilter,
   },
   {
     field: taskModelFields.end,
     title: "End",
-    width: 120,
+    width: 85,
     format: "{0:MM/dd/yyyy}",
-    filter: GanttDateFilter,
+  },
+];
+const selectionModes = [
+  {
+    value: "single",
+    label: "Single selection mode",
+  },
+  {
+    value: "multiple",
+    label: "Multiple selection mode",
   },
 ];
 
-
 export default function Schedule() {
-  const [taskData] = React.useState(exampleTaskData);
-  const [dependencyData] = React.useState(exampleDependencyData);
-  const [expandedState, setExpandedState] = React.useState([7, 11, 12, 13]);
-  const [columnsState, setColumnsState] = React.useState(columns);
-  const onColumnResize = React.useCallback(
-    (event) => event.end && setColumnsState(event.columns),
-    [setColumnsState]
+  const [taskData, setTaskData] = React.useState(exampleTaskData);
+  const [dependencyData, setDependencyData] = React.useState(
+    exampleDependencyData
   );
-  const onColumnReorder = React.useCallback(
-    (event) => setColumnsState(event.columns),
-    [setColumnsState]
+  const [expandedState, setExpandedState] = React.useState({
+    1: true,
+    2: true,
+    7: true,
+    11: true,
+    12: true,
+    13: true,
+  });
+  const [selectedState, setSelectedState] = React.useState({});
+  const [dragEnabled, setDragEnabled] = React.useState(true);
+  const [cellEnabled, setCellEnabled] = React.useState(true);
+  const [selectionMode, setSelectionMode] = React.useState(
+    selectionModes[1].value
   );
   const [dataState, setDataState] = React.useState({
-    sort: [
-      {
-        field: "orderId",
-        dir: "asc",
-      },
-    ],
+    sort: [],
     filter: [],
   });
   const onDataStateChange = React.useCallback(
-    (event) =>
-      setDataState({
-        sort: event.dataState.sort,
-        filter: event.dataState.filter,
-      }),
+    (event) => setDataState(event.dataState),
     [setDataState]
   );
   const onExpandChange = React.useCallback(
     (event) => {
-      const id = getTaskId(event.dataItem);
-      const newExpandedState = event.value
-        ? expandedState.filter((currentId) => currentId !== id)
-        : [...expandedState, id];
-      setExpandedState(newExpandedState);
+      setExpandedState({
+        ...expandedState,
+        [getTaskId(event.dataItem)]: !event.value,
+      });
     },
     [expandedState, setExpandedState]
   );
+  const onTaskClick = React.useCallback(
+    (event) => {
+      const taskId = getTaskId(event.dataItem);
+      setSelectedState({
+        [taskId]: !selectedState[taskId],
+      });
+    },
+    [setSelectedState, selectedState]
+  );
+  const onSelectionChange = React.useCallback(
+    (event) => {
+      const newSelectedState = getSelectedState({
+        event,
+        selectedState,
+        dataItemKey: taskModelFields.id,
+      });
+      setSelectedState(newSelectedState);
+    },
+    [selectedState]
+  );
+  const onKeyDown = React.useCallback(
+    (event) => {
+      const newSelectedState = getSelectedStateFromKeyDown({
+        event,
+        selectedState: selectedState,
+        dataItemKey: taskModelFields.id,
+      });
+      setSelectedState(newSelectedState);
+    },
+    [selectedState]
+  );
+
+  const onDragChange = (event) => {
+    setDragEnabled(event.value);
+  };
+
+  const onCellChange = (event) => {
+    setCellEnabled(event.value);
+  };
+
+  const onSelectionModeChange = (event) => {
+    setSelectionMode(event.value);
+  };
+
   const processedData = React.useMemo(() => {
     const filteredData = filterBy(
       taskData,
@@ -123,31 +167,43 @@ export default function Schedule() {
     );
     return mapTree(sortedData, taskModelFields.children, (task) =>
       extendDataItem(task, taskModelFields.children, {
-        [taskModelFields.isExpanded]: expandedState.includes(getTaskId(task)),
+        [taskModelFields.isExpanded]: expandedState[getTaskId(task)],
+        [taskModelFields.isSelected]: selectedState[getTaskId(task)],
       })
     );
-  }, [taskData, dataState, expandedState]);
+  }, [taskData, dataState, expandedState, selectedState]);
 
     return (
       <Frame>
           <div class="schedule-wrapper">
             <h1>Shift Schedule</h1>
             <Gantt
-              style={ganttStyle}
-              taskData={processedData}
-              taskModelFields={taskModelFields}
-              dependencyData={dependencyData}
-              dependencyModelFields={dependencyModelFields}
-              columns={columnsState}
-              resizable={true}
-              reorderable={true}
-              sortable={true}
-              sort={dataState.sort}
-              filter={dataState.filter}
-              onColumnResize={onColumnResize}
-              onColumnReorder={onColumnReorder}
-              onExpandChange={onExpandChange}
-              onDataStateChange={onDataStateChange}
+            style={ganttStyle}
+      taskData={processedData}
+      taskModelFields={taskModelFields}
+      dependencyData={dependencyData}
+      dependencyModelFields={dependencyModelFields}
+      columns={columns}
+      resizable={true}
+      reorderable={true}
+      sortable={true}
+      sort={dataState.sort}
+      filter={dataState.filter}
+      navigatable={true}
+      onExpandChange={onExpandChange}
+      onDataStateChange={onDataStateChange}
+      toolbar={{
+        addTaskButton: true,
+      }}
+      selectable={{
+        enabled: true,
+        drag: dragEnabled,
+        cell: cellEnabled,
+        mode: selectionMode,
+      }}
+      onTaskClick={onTaskClick}
+      onSelectionChange={onSelectionChange}
+      onKeyDown={onKeyDown}
             >
               <GanttWeekView />
               <GanttDayView />
