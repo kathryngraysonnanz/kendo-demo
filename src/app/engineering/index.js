@@ -37,7 +37,7 @@ function Engineering() {
 
             <GridLayoutItem row={2} col={1} colSpan={3} rowSpan={3} >
               <div class="pivot-wrapper">
-                <h2>Starfleet Expenditures</h2>
+                <h2>Maintenance Cost By Ship</h2>
                  <Pivot/>
               </div>
             </GridLayoutItem>

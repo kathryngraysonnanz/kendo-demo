@@ -65,7 +65,8 @@ export default function Manifest() {
 
     <Frame>
     <div class="manifest-wrapper">
-      <h2>Crew manifest</h2>
+      <h1>Crew manifest</h1>
+      <h2>USS Voyager (NCC-74656-J)</h2>
        <TreeList
        style={{
         maxHeight: '100%',

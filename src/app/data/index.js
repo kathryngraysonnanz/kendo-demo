@@ -4,6 +4,7 @@ import { Button } from '@progress/kendo-react-buttons'
 import { Breadcrumb, StackLayout } from "@progress/kendo-react-layout";
 import { Tooltip } from "@progress/kendo-react-tooltip";
 import Frame from '../frame'
+import MultiSelect from './multiselecttree'
 import {
   Form,
   Field,
@@ -105,7 +106,7 @@ render () {
           onKeyDown={handleKeyDown}
         />
       { this.state.category == null &&
-        <StackLayout orientation={"horizontal"} align={{horizontal: 'start', vertical: 'middle'}} gap={15}>
+        <StackLayout orientation={"horizontal"} align={{horizontal: 'start', vertical: 'top'}} gap={50}>
           <Tooltip anchorElement="pointer" position="bottom" parentTitle={true}>
             <svg height="162.147" width="100.041" version="1.1">
               <title>Badgey says: "Can I help you find something?"</title>
@@ -116,6 +117,10 @@ render () {
             </svg>
           </Tooltip>
           <div>
+          <h2>Select a media type:</h2>
+          <MultiSelect/>
+          </div>
+          <div>
             <h2>Select a research category:</h2>
             <StackLayout orientation={"horizontal"} gap={30}>
               <Button onClick={()=>this.updateCategory('species')}>Alien Species</Button>
@@ -123,6 +128,7 @@ render () {
               <Button onClick={()=>this.updateCategory('spacecraft')}>Spacecraft</Button>
             </StackLayout>
           </div>
+
         </StackLayout>
        }
 
