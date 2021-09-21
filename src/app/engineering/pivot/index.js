@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { PivotGrid, PivotGridContainer, PivotGridConfigurator, usePivotOLAPService, PivotGridConfiguratorButton } from '@progress/kendo-react-pivotgrid';
 import { Loader } from '@progress/kendo-react-indicators';
 

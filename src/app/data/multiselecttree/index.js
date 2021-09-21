@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { MultiSelectTree, getMultiSelectTreeValue } from '@progress/kendo-react-dropdowns';
 import { processMultiSelectTreeData, expandedState } from "./multiselecttree-data-operations";
 import { data } from "./tree-data";

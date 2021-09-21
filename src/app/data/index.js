@@ -5,12 +5,6 @@ import { Breadcrumb, StackLayout } from "@progress/kendo-react-layout";
 import { Tooltip } from "@progress/kendo-react-tooltip";
 import Frame from '../frame'
 import MultiSelect from './multiselecttree'
-import {
-  Form,
-  Field,
-  FormElement,
-  FieldWrapper,
-} from "@progress/kendo-react-form";
 
 let items = [
   {
@@ -57,9 +51,9 @@ export default class DataBank extends Component {
   updateCategory(category) {
     let items = this.state.data
 
-    if (category == 'species') {
+    if (category === 'species') {
       category = 'Alien Species'
-    } else if (category == 'character') {
+    } else if (category === 'character') {
       category = 'Notable Individuals'
     }
 
@@ -81,12 +75,6 @@ render () {
       this.reset();
     };
 
-    const handleButtonClick = (event) => {
-      if (event) {
-        this.setState({ data: items })
-      }
-    };
-
     const handleKeyDown = (event) => {
       let data = this.state.data;
       if (event.nativeEvent.keyCode === 13) {
@@ -105,7 +93,7 @@ render () {
           onItemSelect={handleItemSelect}
           onKeyDown={handleKeyDown}
         />
-      { this.state.category == null &&
+      { this.state.category === null &&
         <StackLayout orientation={"horizontal"} align={{horizontal: 'start', vertical: 'top'}} gap={50}>
           <Tooltip anchorElement="pointer" position="bottom" parentTitle={true}>
             <svg height="162.147" width="100.041" version="1.1">
@@ -140,24 +128,6 @@ render () {
        }
        </div>
     </Frame>
-
-
   )
-  {/* const { error, isLoaded, items } = this.state;
-    if (error) {
-      return (<Frame><h2>Error</h2></Frame>);
-    } else if (!isLoaded) {
-      return (<Frame><div>Loading...</div></Frame>);
-    } else {
-      return (
-        <Frame>
-           <div class="data-wrapper">
-             <h1>Starfleet Data Bank</h1>
-             {console.log(this.state)}
-           </div>
-        </Frame>
-      );
-    }
-  } */}
 }
 }

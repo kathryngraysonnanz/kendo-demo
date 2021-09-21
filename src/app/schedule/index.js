@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './schedule.scss';
 import {
   Gantt,
@@ -10,8 +10,6 @@ import {
   orderBy,
   mapTree,
   extendDataItem,
-  GanttTextFilter,
-  GanttDateFilter,
   getSelectedState,
   getSelectedStateFromKeyDown,
 } from "@progress/kendo-react-gantt";
@@ -63,20 +61,10 @@ const columns = [
     format: "{0:MM/dd/yyyy}",
   },
 ];
-const selectionModes = [
-  {
-    value: "single",
-    label: "Single selection mode",
-  },
-  {
-    value: "multiple",
-    label: "Multiple selection mode",
-  },
-];
 
 export default function Schedule() {
-  const [taskData, setTaskData] = React.useState(exampleTaskData);
-  const [dependencyData, setDependencyData] = React.useState(
+  const [taskData] = React.useState(exampleTaskData);
+  const [dependencyData] = React.useState(
     exampleDependencyData
   );
   const [expandedState, setExpandedState] = React.useState({
@@ -88,11 +76,6 @@ export default function Schedule() {
     13: true,
   });
   const [selectedState, setSelectedState] = React.useState({});
-  const [dragEnabled, setDragEnabled] = React.useState(true);
-  const [cellEnabled, setCellEnabled] = React.useState(true);
-  const [selectionMode, setSelectionMode] = React.useState(
-    selectionModes[1].value
-  );
   const [dataState, setDataState] = React.useState({
     sort: [],
     filter: [],
@@ -142,18 +125,6 @@ export default function Schedule() {
     [selectedState]
   );
 
-  const onDragChange = (event) => {
-    setDragEnabled(event.value);
-  };
-
-  const onCellChange = (event) => {
-    setCellEnabled(event.value);
-  };
-
-  const onSelectionModeChange = (event) => {
-    setSelectionMode(event.value);
-  };
-
   const processedData = React.useMemo(() => {
     const filteredData = filterBy(
       taskData,
@@ -179,31 +150,31 @@ export default function Schedule() {
             <h1>Shift Schedule</h1>
             <Gantt
             style={ganttStyle}
-      taskData={processedData}
-      taskModelFields={taskModelFields}
-      dependencyData={dependencyData}
-      dependencyModelFields={dependencyModelFields}
-      columns={columns}
-      resizable={true}
-      reorderable={true}
-      sortable={true}
-      sort={dataState.sort}
-      filter={dataState.filter}
-      navigatable={true}
-      onExpandChange={onExpandChange}
-      onDataStateChange={onDataStateChange}
-      toolbar={{
-        addTaskButton: true,
-      }}
-      selectable={{
-        enabled: true,
-        drag: dragEnabled,
-        cell: cellEnabled,
-        mode: selectionMode,
-      }}
-      onTaskClick={onTaskClick}
-      onSelectionChange={onSelectionChange}
-      onKeyDown={onKeyDown}
+            taskData={processedData}
+            taskModelFields={taskModelFields}
+            dependencyData={dependencyData}
+            dependencyModelFields={dependencyModelFields}
+            columns={columns}
+            resizable={true}
+            reorderable={true}
+            sortable={true}
+            sort={dataState.sort}
+            filter={dataState.filter}
+            navigatable={true}
+            onExpandChange={onExpandChange}
+            onDataStateChange={onDataStateChange}
+            toolbar={{
+              addTaskButton: true,
+            }}
+            selectable={{
+              enabled: true,
+              drag: true,
+              cell: true,
+              mode: "multiple",
+            }}
+            onTaskClick={onTaskClick}
+            onSelectionChange={onSelectionChange}
+            onKeyDown={onKeyDown}
             >
               <GanttWeekView />
               <GanttDayView />

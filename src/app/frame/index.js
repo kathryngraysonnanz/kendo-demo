@@ -4,7 +4,7 @@ import "../../../src/index.scss";
 import { Chip } from '@progress/kendo-react-buttons'
 import { NavMenu } from '../sidebar'
 
-export default class extends Component {
+export default class Frame extends Component {
   render() {
     return (
       <div className="App">

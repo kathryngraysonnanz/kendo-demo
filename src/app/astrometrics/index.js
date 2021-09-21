@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './astrometrics.scss';
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
-import { orderBy, process } from "@progress/kendo-data-query";
+import { process } from "@progress/kendo-data-query";
 import {
   GridColumnMenuSort,
   GridColumnMenuFilter,
@@ -9,13 +9,6 @@ import {
 } from "@progress/kendo-react-grid";
 import Frame from '../frame'
 import astroData from "./astro-data.json";
-
-const initialSort = [
-  {
-    field: "name",
-    dir: "asc",
-  },
-];
 
 const createDataState = (dataState) => {
   return {
@@ -41,7 +34,6 @@ export default function AstronomicalLog() {
 
   });
 
-  const [sort, setSort] = React.useState(initialSort);
   const [result, setResult] = React.useState(initialState.result);
   const [dataState, setDataState] = React.useState(initialState.dataState);
   const dataStateChange = (event) => {

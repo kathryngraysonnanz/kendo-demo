@@ -1,6 +1,6 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { ArcGauge } from '@progress/kendo-react-gauges';
+
 const colors = [{
   to: 25,
   color: '#33cc99'

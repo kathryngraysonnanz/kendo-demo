@@ -1,18 +1,10 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import {
   TreeList,
-  orderBy,
-  filterBy,
   mapTree,
   extendDataItem,
-  TreeListTextFilter,
-  TreeListNumericFilter,
-  TreeListDateFilter,
-  TreeListBooleanFilter,
   getSelectedState,
   getSelectedStateFromKeyDown } from '@progress/kendo-react-treelist';
-import { Checkbox, RadioGroup } from '@progress/kendo-react-inputs';
 import { getter } from '@progress/kendo-react-common';
 import employees from './data';
 import Frame from '../frame'
@@ -30,7 +22,7 @@ const extendData = (dataState, selectedState, expandedState) => {
 };
 
 export default function Manifest() {
-  const [dataState, setDataState] = React.useState(employees.slice());
+  const [dataState] = React.useState(employees.slice());
   const [selectedState, setSelectedState] = React.useState({});
   const [expandedState, setExpandedState] = React.useState({
     1: true,

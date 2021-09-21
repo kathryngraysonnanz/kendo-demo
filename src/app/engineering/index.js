@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import Frame from '../frame'
 import { GridLayout, GridLayoutItem } from "@progress/kendo-react-layout";
 import Gauge from './gauge'
