@@ -94,7 +94,7 @@ render () {
           onKeyDown={handleKeyDown}
         />
       { this.state.category === null &&
-        <StackLayout orientation={"horizontal"} align={{horizontal: 'start', vertical: 'top'}} gap={50}>
+        <StackLayout orientation={"vertical"} align={{horizontal: 'start', vertical: 'top'}} gap={50}>
           <Tooltip anchorElement="pointer" position="bottom" parentTitle={true}>
             <svg height="162.147" width="100.041" version="1.1">
               <title>Badgey says: "Can I help you find something?"</title>

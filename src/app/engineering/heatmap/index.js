@@ -32,12 +32,12 @@ export default function Heatmap() {
       <ChartSeriesItem
         type="heatmap"
         data={data}
-        color="#216e39"
+        color="hotpink"
         labels={{
           visible: false,
         }}
         markers={{
-          type: "roundedRect",
+          type: "circle",
           border: {
             width: 2,
           },

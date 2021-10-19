@@ -7,4 +7,16 @@
   .k-master-row td.k-grid-content-sticky.k-state-selected {
     background-color: #cc88ff;
   }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .k-state-invalid {
+    border-width: 3px;
+  }
+
+  fieldset {
+    border: 0px solid black;
+  }
 }
