@@ -17,7 +17,7 @@
     "@progress/kendo-react-gauges": "^4.9.0",
     "@progress/kendo-react-grid": "^4.9.0",
     "@progress/kendo-react-indicators": "^4.9.0",
-    "@progress/kendo-react-inputs": "^4.9.0",
+    "@progress/kendo-react-inputs": "^4.13.0",
     "@progress/kendo-react-intl": "^4.9.0",
     "@progress/kendo-react-layout": "^4.9.0",
     "@progress/kendo-react-pivotgrid": "^4.9.0",

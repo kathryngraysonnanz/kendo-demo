@@ -10,6 +10,7 @@ import Engineering from '../engineering'
 import DataBank from '../data'
 import Schedule from '../schedule'
 import Manifest from '../manifest'
+import Settings from '../settings'
 
 export default function App() {
   return (
@@ -25,6 +26,8 @@ export default function App() {
             component={Schedule} />
         <Route path="/manifest"
             component={Manifest} />
+        <Route path="/settings"
+            component={Settings} />
         <Route path="/">
           <Home/>
         </Route>
