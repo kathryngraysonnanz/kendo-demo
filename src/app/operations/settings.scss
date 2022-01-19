@@ -1,22 +1,18 @@
-.settings-wrapper {
+.ops-wrapper {
   width: 100%;
   height: 100%;
   max-height: calc(100vh - 100px);
   overflow: scroll;
 
+  .viewscreen {
+    border: 1px solid gold;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
   .flex {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
   }
 
-  h1 {
-    margin-bottom: 10px;
-  }
-
-  .colorpicker {
-    p {
-      margin-bottom: 10px;
-    }
-  }
 }

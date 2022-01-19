@@ -11,6 +11,7 @@ import DataBank from '../data'
 import Schedule from '../schedule'
 import Manifest from '../manifest'
 import Settings from '../settings'
+import Operations from '../operations'
 
 export default function App() {
   return (
@@ -28,6 +29,8 @@ export default function App() {
             element={<Manifest/>} />
         <Route path="/settings"
             element={<Settings/>} />
+        <Route path="/ops"
+            element={<Operations/>} />
         <Route path="/" element={<Home/>} />
       </Routes>
     </Router>

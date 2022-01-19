@@ -18,7 +18,7 @@ export class NavMenu extends Component {
   <Link to='/engineering'>Engineering Console</Link>
   </div>
   <div class="menu">
-  <Link to='/'>Weapons Array</Link>
+  <Link to='/ops'>Operations Console</Link>
   </div>
   <div class="menu">
   <Link to='/data'>Data Bank</Link>
