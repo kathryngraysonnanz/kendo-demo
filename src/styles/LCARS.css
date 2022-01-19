@@ -68,6 +68,18 @@ script {
     color: #ffffff;
 }
 
+.k-picker {
+  background: none;
+}
+
+.k-picker:hover {
+  background: none;
+}
+
+.k-picker .k-input-button {
+  background-color: #aaaaff;
+}
+
 .k-block,
 .k-panel {
     border-radius: 20px;
@@ -11543,17 +11555,18 @@ kendo-badge-container {
 }
 
 .k-input {
+    background-color: #666688;
+    border-radius: 20px;
     margin: 0;
     padding: 4px 8px;
     width: 100%;
     min-width: 0;
-    height: calc( 1.4285714286em + 8px);
+    height: calc( 1.4285714286em + 15px);
     border: 0;
     outline: 0;
     box-sizing: border-box;
     box-shadow: none;
     color: inherit;
-    background: none;
     font: inherit;
     display: -ms-flexbox;
     display: flex;
@@ -18989,7 +19002,6 @@ textarea.k-textarea {
     font-size: 14px;
     line-height: 1.4285714286;
     white-space: nowrap;
-    background: none;
     display: -ms-inline-flexbox;
     display: inline-flex;
     vertical-align: middle;
@@ -20034,11 +20046,11 @@ select.k-dropdown:focus, select.k-dropdowntree:focus {
 
 .k-multiselect, .k-dropdowntree {
     border-radius: 20px;
+    border: 2px solid green;
     width: 100%;
     border-width: 0;
     box-sizing: border-box;
     outline: 0;
-    background: none;
     font-family: inherit;
     font-size: 14px;
     line-height: 1.4285714286;
@@ -26333,8 +26345,7 @@ kendo-card-footer {
 
 .k-grid[dir="rtl"] .k-filtercell-operator,
 .k-rtl .k-grid .k-filtercell-operator {
-    margin-left: 0;
-    margin-right: 4px;
+    margin: 0;
 }
 
 .k-grid[dir="rtl"] .k-dirty,

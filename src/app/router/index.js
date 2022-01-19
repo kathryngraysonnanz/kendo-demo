@@ -2,7 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Routes
 } from "react-router-dom";
 import Home from '../home'
 import AstronomicalLog from '../astrometrics'
@@ -15,23 +15,21 @@ import Settings from '../settings'
 export default function App() {
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route path="/astrometrics"
-          component={AstronomicalLog} />
+          element={<AstronomicalLog/>} />
         <Route path="/engineering"
-            component={Engineering} />
+            element={<Engineering/>} />
         <Route path="/data"
-            component={DataBank} />
+            element={<DataBank/>} />
         <Route path="/schedule"
-            component={Schedule} />
+            element={<Schedule/>} />
         <Route path="/manifest"
-            component={Manifest} />
+            element={<Manifest/>} />
         <Route path="/settings"
-            component={Settings} />
-        <Route path="/">
-          <Home/>
-        </Route>
-      </Switch>
+            element={<Settings/>} />
+        <Route path="/" element={<Home/>} />
+      </Routes>
     </Router>
   );
 }
