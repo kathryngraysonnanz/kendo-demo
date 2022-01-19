@@ -19,8 +19,8 @@ export default function Schedule() {
   };
 
   const min = new Date();
-  const max = new Date (2021, 11, 31);
-  const starting = new Date(2021, 11, 19);
+  const max = new Date (2022, 5, 31);
+  const starting = new Date(2022, 1, 30);
 
     return (
       <Frame>
