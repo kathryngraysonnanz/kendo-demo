@@ -32,7 +32,7 @@ export default function Heatmap() {
       <ChartSeriesItem
         type="heatmap"
         data={data}
-        color="hotpink"
+        color="#7788ff"
         labels={{
           visible: false,
         }}

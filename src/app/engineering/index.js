@@ -4,6 +4,7 @@ import { GridLayout, GridLayoutItem } from "@progress/kendo-react-layout";
 import Gauge from './gauge'
 import Heatmap from './heatmap'
 import Pivot from './pivot'
+import DragDrop from './drag-drop'
 import './engineering.scss'
 
 function Engineering() {
@@ -34,7 +35,12 @@ function Engineering() {
               <Gauge/>
             </GridLayoutItem>
 
-            <GridLayoutItem row={2} col={1} colSpan={3} rowSpan={3} >
+            <GridLayoutItem row={2} col={1} colSpan={3} rowSpan={2} >
+              <h2>Subinterlink Power Prioritization</h2>
+              <DragDrop/>
+            </GridLayoutItem>
+
+            <GridLayoutItem row={4} col={1} colSpan={3} rowSpan={3} >
               <div class="pivot-wrapper">
                 <h2>Maintenance Cost By Ship</h2>
                  <Pivot/>
