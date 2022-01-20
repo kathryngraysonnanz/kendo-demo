@@ -23,6 +23,7 @@
     "@progress/kendo-react-layout": "^5.0.0",
     "@progress/kendo-react-pivotgrid": "^5.0.0",
     "@progress/kendo-react-progressbars": "^5.0.0",
+    "@progress/kendo-react-scrollview": "^5.0.0",
     "@progress/kendo-react-tooltip": "^5.0.0",
     "@progress/kendo-react-treelist": "^5.0.0",
     "@progress/kendo-react-treeview": "^5.0.0",

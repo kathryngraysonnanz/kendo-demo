@@ -3,6 +3,7 @@ import Frame from '../frame'
 import { Popover, PopoverActionsBar } from "@progress/kendo-react-tooltip";
 import './settings.scss';
 import { Button } from "@progress/kendo-react-buttons";
+import { ArcGauge } from '@progress/kendo-react-gauges';
 
 export const PopoverContext = React.createContext({
   onClick: () => null,
@@ -34,13 +35,18 @@ export default function Operations() {
            show={show}
            position={"top"}
            anchor={anchor.current && anchor.current.element}
-           title={"Test"}
+           title={"Status Report"}
          >
+          <p>Heading: 351-mark-10</p>
+          <p>Speed: Warp 6.8</p>
+          <p>Shields: 98%</p>
+          <p>Closest Class-M Planet: Vulcan</p>
            <PopoverActionsBar>
              <Button onClick={onClick}>Close</Button>
            </PopoverActionsBar>
          </Popover>
         </div>
+
       </Frame>
     );
 
