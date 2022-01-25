@@ -40,7 +40,7 @@ export default function Operations() {
           <p>Heading: 351-mark-10</p>
           <p>Speed: Warp 6.8</p>
           <p>Shields: 98%</p>
-          <p>Closest Class-M Planet: Vulcan</p>
+          <p>Closest Class M Planet: Vulcan</p>
            <PopoverActionsBar>
              <Button onClick={onClick}>Close</Button>
            </PopoverActionsBar>

@@ -40,13 +40,15 @@ export default function Settings() {
                   <h3>Clearance level: Alpha</h3>
                 </div>
                  <QRCode
-                  style ={{width: "100px"}}
-                  overlay={overlay}
+                  style={{width: "100px"}}
                   value="https://memory-alpha.fandom.com/wiki/Kathryn_Janeway"
                   errorCorrection="M"
+                  // overlay={overlay}
+                  // color="#cc88ff"
                 />
             </div>
-          <Barcode type="EAN8" value="2346722" />
+          <Barcode type="EAN8" value="2346722" renderAs="svg" />
+          {/* <Barcode type="POSTNET" value="12345" height={100} renderAs="canvas"/> */ }
           </Card>
           <br/><br/>
           <ExpansionPanel

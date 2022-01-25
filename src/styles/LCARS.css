@@ -16721,6 +16721,7 @@ textarea.k-textarea {
     -ms-flex-flow: inherit;
         flex-flow: inherit;
     position: relative;
+    height: 100%;
     -ms-touch-action: none;
         touch-action: none;
 }
