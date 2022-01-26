@@ -5,10 +5,6 @@ import './settings.scss';
 import { Button } from "@progress/kendo-react-buttons";
 import { ArcGauge } from '@progress/kendo-react-gauges';
 
-export const PopoverContext = React.createContext({
-  onClick: () => null,
-});
-
 export default function Operations() {
 
     const [show, setShow] = React.useState(false);
