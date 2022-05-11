@@ -4,6 +4,7 @@ import { Popover, PopoverActionsBar } from "@progress/kendo-react-tooltip";
 import './settings.scss';
 import { Button } from "@progress/kendo-react-buttons";
 import { ArcGauge } from '@progress/kendo-react-gauges';
+import { Map, MapLayers, MapShapeLayer, MapTileLayer, MapMarkerLayer } from '@progress/kendo-react-map';
 
 export default function Operations() {
 
@@ -14,9 +15,29 @@ export default function Operations() {
       setShow(!show);
     };
 
+    const center = [38.0703, -122.8896];
+const tileSubdomains = ['a', 'b', 'c'];
+
+const tileUrl = e => `https://${e.subdomain}.tile.openstreetmap.org/${e.zoom}/${e.x}/${e.y}.png`;
+
+const attribution = '&copy; <a href="https://osm.org/copyright">OpenStreetMap contributors</a>';
+
+const markers = [{
+  latlng: [38.0703, -122.8896],
+  name: 'Starfleet Academy'
+}];
+
     return (
       <Frame>
         <div className="ops-wrapper">
+        <h1>Closest Starfleet Base</h1>
+        <Map center={center} zoom={15}>
+          <MapLayers>
+            <MapTileLayer urlTemplate={tileUrl} subdomains={tileSubdomains} attribution={attribution} />
+
+            <MapMarkerLayer data={markers} locationField="latlng" titleField="name" />
+          </MapLayers>
+        </Map>
           <h1>Current Heading: 351-mark-10</h1>
 
 
@@ -42,6 +63,8 @@ export default function Operations() {
            </PopoverActionsBar>
          </Popover>
         </div>
+
+
 
       </Frame>
     );
