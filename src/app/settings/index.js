@@ -6,8 +6,7 @@ import {
   ExpansionPanelContent,
 } from "@progress/kendo-react-layout";
 import { Reveal } from "@progress/kendo-react-animation";
-import { Barcode } from "@progress/kendo-react-barcodes";
-import { QRCode } from "@progress/kendo-react-barcodes";
+import { Barcode, QRCode } from "@progress/kendo-react-barcodes";
 import { Card } from "@progress/kendo-react-layout";
 import './settings.scss';
 
@@ -43,12 +42,12 @@ export default function Settings() {
                   style={{width: "100px"}}
                   value="https://memory-alpha.fandom.com/wiki/Kathryn_Janeway"
                   errorCorrection="M"
-                  // overlay={overlay}
-                  // color="#cc88ff"
+                  overlay={overlay}
+                  color="#cc88ff"
                 />
             </div>
-          <Barcode type="EAN8" value="2346722" renderAs="svg" />
-          {/* <Barcode type="POSTNET" value="12345" height={100} renderAs="canvas"/> */ }
+          {/* <Barcode type="EAN8" value="2346722" renderAs="svg" /> */}
+          <Barcode type="POSTNET" value="11234" height={100} renderAs="canvas"/>
           </Card>
           <br/><br/>
           <ExpansionPanel

@@ -29,7 +29,7 @@ export default function Operations() {
 
          <Popover
            show={show}
-           position={"top"}
+           position={"bottom"}
            anchor={anchor.current && anchor.current.element}
            title={"Status Report"}
          >
