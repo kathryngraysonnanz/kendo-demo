@@ -1,6 +1,6 @@
 export const cards = [{
   "id": 3,
-  "title": "Voyager Status",
+  "title": "Return to Alpha Quadrant",
   "order": 10,
   "description": "Return to Alpha Quadrant",
   "status": "inProgress",
@@ -11,7 +11,7 @@ export const cards = [{
   "image": "https://demos.telerik.com/kendo-ui/content/web/taskboard/taskboard-demo-illustrations-04.png"
 }, {
   "id": 4,
-  "title": "Voyager Status",
+  "title": "Promote Harry Kim",
   "order": 10,
   "description": "Promote Harry Kim",
   "status": "todo",
@@ -22,7 +22,7 @@ export const cards = [{
   "image": "https://demos.telerik.com/kendo-ui/content/web/taskboard/taskboard-demo-illustrations-04.png"
 }, {
   "id": 5,
-  "title": "Voyager Status",
+  "title": "Deal with Tuvix",
   "order": 5,
   "description": "Deal with Tuvix",
   "status": "inProgress",
@@ -33,7 +33,7 @@ export const cards = [{
   "image": "https://demos.telerik.com/kendo-ui/content/web/taskboard/taskboard-demo-illustrations-05.png"
 }, {
   "id": 6,
-  "title": "Voyager Status",
+  "title": "Get Coffee from that Nebula",
   "order": 6,
   "description": "Get Coffee from that Nebula",
   "status": "inProgress",
@@ -44,7 +44,7 @@ export const cards = [{
   "image": "https://demos.telerik.com/kendo-ui/content/web/taskboard/taskboard-demo-illustrations-06.png"
 }, {
   "id": 7,
-  "title": "Alien Species",
+  "title": "Defeat Borg",
   "order": 7,
   "description": "Defeat Borg",
   "status": "done",
@@ -56,7 +56,7 @@ export const cards = [{
 },
 {
   "id": 7,
-  "title": "Personal",
+  "title": "Edit Fairhaven Holo – Delete Wife",
   "order": 7,
   "description": "Edit Fairhaven Holo – Delete Wife",
   "status": "done",
@@ -68,7 +68,7 @@ export const cards = [{
 },
 {
   "id": 7,
-  "title": "Personal",
+  "title": "Debug 'Bride of Chaotica'",
   "order": 7,
   "description": "Debug 'Bride of Chaotica'",
   "status": "done",
