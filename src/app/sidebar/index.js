@@ -5,25 +5,25 @@ import { Link } from "react-router-dom";
 export class NavMenu extends Component {
   render() {
     return (
-<nav class="left-menu">
-  <div class="menu">
+<nav className="left-menu">
+  <div className="menu">
     <Link to='/astrometrics'>
       Astrometrics Console
     </Link>
   </div>
-  <div class="menu">
+  <div className="menu">
   <Link to='/manifest'>Crew Manifest</Link>
     </div>
-  <div class="menu">
+  <div className="menu">
   <Link to='/engineering'>Engineering Console</Link>
   </div>
-  <div class="menu">
+  <div className="menu">
   <Link to='/ops'>Operations Console</Link>
   </div>
-  <div class="menu">
+  <div className="menu">
   <Link to='/data'>Data Bank</Link>
   </div>
-  <div class="menu">
+  <div className="menu">
   <Link to='/schedule'>Schedule</Link>
   </div>
 </nav>

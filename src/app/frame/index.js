@@ -9,16 +9,16 @@ export default class Frame extends Component {
   render() {
     return (
       <div className="App">
-        <div className={'page-wrapper'}>
-          <div className={'display-wrapper'}>
-            <div class="left-container">
+        <div className='page-wrapper'>
+          <div className='display-wrapper'>
+            <div className="left-container">
                 <NavMenu/>
             </div>
-            <div class="top-container"></div>
-            <div class="corner-background">
-              <div class="corner"></div>
+            <div className="top-container"></div>
+            <div className="corner-background">
+              <div className="corner"></div>
              </div>
-             <div class="user">
+             <div className={"user"}>
                <Link to="/settings">
                  <Chip removable={false}>
                     <span className="k-chip-label">Authorized User: Captain Kathryn Janeway</span>
@@ -26,7 +26,7 @@ export default class Frame extends Component {
                   </Chip>
                 </Link>
              </div>
-            <div class="center-panel">
+            <div className="center-panel">
                { this.props.children }
             </div>
           </div>
