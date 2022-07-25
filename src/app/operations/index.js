@@ -15,7 +15,7 @@ export default function Operations() {
       setShow(!show);
     };
 
-    const center = [38.0703, -122.8896];
+    const center = [42.3605, -71.0583];
 const tileSubdomains = ['a', 'b', 'c'];
 
 const tileUrl = e => `https://${e.subdomain}.tile.openstreetmap.org/${e.zoom}/${e.x}/${e.y}.png`;
@@ -23,8 +23,8 @@ const tileUrl = e => `https://${e.subdomain}.tile.openstreetmap.org/${e.zoom}/${
 const attribution = '&copy; <a href="https://osm.org/copyright">OpenStreetMap contributors</a>';
 
 const markers = [{
-  latlng: [38.0703, -122.8896],
-  name: 'Starfleet Academy'
+  latlng: [42.3605, -71.0583],
+  name: 'Progress HQ'
 }];
 
     return (
