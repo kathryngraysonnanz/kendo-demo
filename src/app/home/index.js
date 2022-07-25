@@ -10,9 +10,9 @@ export default function Home() {
     {
       title: "United Federation of Planets Logo",
       position: 1,
-      url: "http://trekipedia.com/mw/images/a/ae/ufp_logo-fasa2012_color.jpg",
+      url: "https://uss-theurgy.com/w/images/a/a7/United_Federation_of_Planets_logo.png",
       style: {
-        width: 400,
+        width: 300,
         height: 300,
       }
     },
