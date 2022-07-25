@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f79d347.css",
-    "main.js": "/static/js/main.ae539f36.js",
-    "index.html": "/index.html",
-    "main.2f79d347.css.map": "/static/css/main.2f79d347.css.map",
-    "main.ae539f36.js.map": "/static/js/main.ae539f36.js.map"
+    "main.css": "/kendo-demo/static/css/main.2f79d347.css",
+    "main.js": "/kendo-demo/static/js/main.aea2301b.js",
+    "index.html": "/kendo-demo/index.html",
+    "main.2f79d347.css.map": "/kendo-demo/static/css/main.2f79d347.css.map",
+    "main.aea2301b.js.map": "/kendo-demo/static/js/main.aea2301b.js.map"
   },
   "entrypoints": [
     "static/css/main.2f79d347.css",
-    "static/js/main.ae539f36.js"
+    "static/js/main.aea2301b.js"
   ]
 }
