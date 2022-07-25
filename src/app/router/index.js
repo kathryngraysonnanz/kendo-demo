@@ -15,7 +15,7 @@ import Operations from '../operations'
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/kendo-demo">
       <Routes>
         <Route path="/astrometrics"
           element={<AstronomicalLog/>} />

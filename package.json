@@ -2,7 +2,7 @@
   "name": "kendo-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kathryngraysonnanz.github.io/kendo-demo/",
+  "homepage": "https://kathryngraysonnanz.github.io/kendo-demo",
   "dependencies": {
     "@progress/kendo-data-query": "1.5.5",
     "@progress/kendo-drawing": "1.16.1",

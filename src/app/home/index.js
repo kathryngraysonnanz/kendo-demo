@@ -53,7 +53,7 @@ export default function Home() {
                   return (
                     <img
                       src={item.url}
-                      alt={`Photo of ${item.title}`}
+                      alt={`${item.title}`}
                       style={item.style}
                       draggable={false}
                     />
