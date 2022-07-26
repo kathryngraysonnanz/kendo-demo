@@ -11,55 +11,29 @@ import {
 import { data } from "./heatmap-data";
 
 const dayLabels = {
-  1: "99355.24",
-  3: "98828.1",
-  5: "91126.52",
+  0: "99355.24",
+  1: "97235.0",
+  2: "98828.1",
+  3: "94965.91",
+  4: "91126.52",
+  5: "93457.3",
+  6: "97628.99",
 };
-
-const yAxisLabelContent = (e) => dayLabels[e.value] || "";
 
 export default function Heatmap() {
   return (
-    <Chart
-      style={{
-        width: "100%",
-        height: "80%",
-      }}
-    >
-
-
-    <ChartSeries>
-      <ChartSeriesItem
-        type="heatmap"
-        data={data}
-        color="#7788ff"
-        labels={{
-          visible: false,
-        }}
-        markers={{
-          type: "circle",
-          border: {
-            width: 2,
-          },
-        }}
-      />
-    </ChartSeries>
-
-    <ChartXAxis>
-      <ChartXAxisItem visible={false} />
-    </ChartXAxis>
-
-    <ChartYAxis>
-      <ChartYAxisItem
-        reverse={true}
-        line={{
-          visible: false,
-        }}
-        labels={{
-          content: yAxisLabelContent,
-        }}
-      />
-    </ChartYAxis>
-  </Chart>
-  )
-}
+    <Chart style={{ width: "100%", height: "80%"}}>
+      <ChartSeries>
+        <ChartSeriesItem type="heatmap" data={data} color="#7788ff"
+          labels={{ visible: false }}
+          markers={{ type: "circle", border: { width: 2} }}
+        />
+      </ChartSeries>
+      <ChartYAxis>
+        <ChartYAxisItem labels={{ content: (e) => dayLabels[e.value] }}/>
+      </ChartYAxis>
+      <ChartXAxis>
+        <ChartXAxisItem visible={false} />
+      </ChartXAxis>
+    </Chart>
+  ); }
