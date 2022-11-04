@@ -5,12 +5,14 @@ import Gauge from './gauge'
 import Heatmap from './heatmap'
 import Pivot from './pivot'
 import DragDrop from './drag-drop'
+import {Helmet} from "react-helmet";
 import './engineering.scss'
 
 function Engineering() {
     return (
       <Frame>
         <div class='engineering-wrapper'>
+        <Helmet><title>Engineering – LKARS</title></Helmet>
         <h1>Engineering Console</h1>
           <GridLayout
              gap={{ rows: 20, cols: 20 }}

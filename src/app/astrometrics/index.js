@@ -4,6 +4,7 @@ import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
 import { process } from "@progress/kendo-data-query";
 import Frame from '../frame'
 import astroData from "./astro-data.json";
+import {Helmet} from "react-helmet";
 
 export default function AstronomicalLog() {
 
@@ -22,6 +23,9 @@ export default function AstronomicalLog() {
   return (
      <Frame>
         <div class="manifest-wrapper">
+        <Helmet>
+          <title>Astrometrics – LKARS</title>
+        </Helmet>
           <h1>Astrometrics Console</h1>
           <h2>Recently Encountered Astrological Objects</h2>
           <Grid

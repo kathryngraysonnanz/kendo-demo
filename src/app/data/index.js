@@ -5,6 +5,7 @@ import { Breadcrumb, StackLayout } from "@progress/kendo-react-layout";
 import { Tooltip } from "@progress/kendo-react-tooltip";
 import Frame from '../frame'
 import MultiSelect from './multiselecttree'
+import {Helmet} from "react-helmet";
 
 let items = [
   {
@@ -86,6 +87,7 @@ render () {
 
   return (
     <Frame>
+      <Helmet><title>Data - LKARS</title></Helmet>
       <div class="data-wrapper">
         <h1>Data Bank</h1>
         <Breadcrumb

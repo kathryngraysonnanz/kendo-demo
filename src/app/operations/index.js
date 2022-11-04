@@ -5,6 +5,7 @@ import './settings.scss';
 import { Button } from "@progress/kendo-react-buttons";
 import { ArcGauge } from '@progress/kendo-react-gauges';
 import { Map, MapLayers, MapShapeLayer, MapTileLayer, MapMarkerLayer } from '@progress/kendo-react-map';
+import {Helmet} from "react-helmet";
 
 export default function Operations() {
 
@@ -30,6 +31,7 @@ const markers = [{
     return (
       <Frame>
         <div className="ops-wrapper">
+        <Helmet><title>Ops – LKARS</title></Helmet>
         <h1>Closest Starfleet Base</h1>
         <Map center={center} zoom={15}>
           <MapLayers>

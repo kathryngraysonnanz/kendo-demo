@@ -8,6 +8,7 @@ import {
 import { Reveal } from "@progress/kendo-react-animation";
 import { Barcode, QRCode } from "@progress/kendo-react-barcodes";
 import { Card } from "@progress/kendo-react-layout";
+import {Helmet} from "react-helmet";
 import './settings.scss';
 
 export default function Settings() {
@@ -25,6 +26,7 @@ export default function Settings() {
     return (
       <Frame>
         <div class="settings-wrapper">
+        <Helmet><title>Settings – LKARS</title></Helmet>
           <h1>Welcome</h1>
           <Card style={{
                 backgroundColor: "white",

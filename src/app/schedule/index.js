@@ -9,6 +9,7 @@ import { filterBy } from '@progress/kendo-data-query';
 import { Column } from './column';
 import { Card } from './card';
 import { cards } from './cards';
+import {Helmet} from "react-helmet";
 
 export default function Schedule() {
 
@@ -105,6 +106,7 @@ const starting = new Date(2022, 1, 30);
     return (
       <Frame>
         <div class="schedule-wrapper">
+        <Helmet><title>Schedule – LKARS</title></Helmet>
         <h1>Your Tasks</h1>
         <TaskBoard columnData={columnsData} taskData={resultTasks} priorities={priorities} onChange={onChangeHandler} column={Column} card={Card} style={{ height: '700px'}} tabIndex={0}>
           <TaskBoardToolbar>
@@ -113,7 +115,7 @@ const starting = new Date(2022, 1, 30);
             <Input placeholder="Search..." onChange={onSearchChange} value={filter} />
           </TaskBoardToolbar>
         </TaskBoard>;
-        
+
         <h1>Schedule Shore Leave</h1>
         <form onSubmit={handleSubmit}>
            <fieldset>

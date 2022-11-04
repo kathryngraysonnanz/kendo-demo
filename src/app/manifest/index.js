@@ -8,6 +8,8 @@ import {
 import { getter } from '@progress/kendo-react-common';
 import employees from './data';
 import Frame from '../frame'
+import {Helmet} from "react-helmet";
+
 const DATA_ITEM_KEY = 'id';
 const SUB_ITEMS_FIELD = 'employees';
 const EXPAND_FIELD = 'expanded';
@@ -57,6 +59,7 @@ export default function Manifest() {
 
     <Frame>
     <div class="manifest-wrapper">
+    <Helmet><title>Crew Manifest – LKARS</title></Helmet>
       <h1>Crew manifest</h1>
       <h2>USS Voyager (NCC-74656-J)</h2>
        <TreeList

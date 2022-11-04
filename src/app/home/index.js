@@ -3,6 +3,7 @@ import './home.scss';
 import Frame from '../frame'
 import { Typography } from "@progress/kendo-react-common";
 import { ScrollView } from "@progress/kendo-react-scrollview";
+import {Helmet} from "react-helmet";
 
 export default function Home() {
 
@@ -38,6 +39,9 @@ export default function Home() {
     return (
       <Frame>
           <div class="welcome">
+          <Helmet>
+            <title>Welcome to LKARS Menu System</title>
+          </Helmet>
             <div>
               <ScrollView
                 style={{
