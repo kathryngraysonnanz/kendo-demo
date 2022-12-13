@@ -1,4 +1,13 @@
 @charset "UTF-8";
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;  
+}
+
 .k-theme-test-class,
 .k-common-test-class {
     opacity: 0;

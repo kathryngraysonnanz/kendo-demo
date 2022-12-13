@@ -1,7 +1,6 @@
 .page-wrapper {
   background-color: black;
   height: 100vh;
-  width: calc(100% - 30px);
   display: flex;
   padding: 20px 0 0 20px;
 
@@ -13,7 +12,9 @@
     height: 100%;
     width: 100%;
   }
+
 }
+
 
 .top-container {
   grid-column: col1-start / span 3;
@@ -36,7 +37,7 @@
   z-index: 0;
   padding: 40px;
   max-width: 100%;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .user {
