@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.scss';
 import Frame from '../frame'
+import Callout from '../callout'
 import { Typography } from "@progress/kendo-react-common";
 import { ScrollView } from "@progress/kendo-react-scrollview";
 import {Helmet} from "react-helmet";
@@ -49,7 +50,7 @@ export default function Home() {
                   height: 300,
                   backgroundColor: "black"
                 }}
-                endless={true}
+                endless={false}
                 arrows={false}
                 pageable={false}
               >
@@ -68,6 +69,8 @@ export default function Home() {
               <Typography.h1>LKARS terminal active</Typography.h1>
               <Typography.p>Library KendoReact Access/Retrieval System</Typography.p>
               <Typography.h2>Systems online</Typography.h2>
+
+              <Callout as="p">A KendoReact Demo Application</Callout>
             </div>
           </div>
       </Frame>

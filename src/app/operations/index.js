@@ -32,14 +32,8 @@ const markers = [{
       <Frame>
         <div className="ops-wrapper">
         <Helmet><title>Ops – LKARS</title></Helmet>
-        <h1>Closest Starfleet Base</h1>
-        <Map center={center} zoom={15}>
-          <MapLayers>
-            <MapTileLayer urlTemplate={tileUrl} subdomains={tileSubdomains} attribution={attribution} />
 
-            <MapMarkerLayer data={markers} locationField="latlng" titleField="name" />
-          </MapLayers>
-        </Map>
+
           <h1>Current Heading: 351-mark-10</h1>
 
 
@@ -52,7 +46,7 @@ const markers = [{
 
          <Popover
            show={show}
-           position={"bottom"}
+           position={"top"}
            anchor={anchor.current && anchor.current.element}
            title={"Status Report"}
          >
@@ -64,6 +58,15 @@ const markers = [{
              <Button onClick={onClick}>Close</Button>
            </PopoverActionsBar>
          </Popover>
+         <br/><br/>
+          <h1>Closest Starfleet Base</h1>
+         <Map center={center} zoom={15}>
+           <MapLayers>
+             <MapTileLayer urlTemplate={tileUrl} subdomains={tileSubdomains} attribution={attribution} />
+
+             <MapMarkerLayer data={markers} locationField="latlng" titleField="name" />
+           </MapLayers>
+         </Map>
         </div>
 
 
