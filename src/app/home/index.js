@@ -39,7 +39,7 @@ export default function Home() {
   ];
     return (
       <Frame>
-          <div class="welcome">
+          <div className="welcome">
           <Helmet>
             <title>Welcome to LKARS Menu System</title>
           </Helmet>
@@ -54,13 +54,14 @@ export default function Home() {
                 arrows={false}
                 pageable={false}
               >
-                {items.map((item, index) => {
+                {items.map((item) => {
                   return (
                     <img
                       src={item.url}
                       alt={`${item.title}`}
                       style={item.style}
                       draggable={false}
+                      key={item.url}
                     />
                   );
                 })}
@@ -70,7 +71,7 @@ export default function Home() {
               <Typography.p>Library KendoReact Access/Retrieval System</Typography.p>
               <Typography.h2>Systems online</Typography.h2>
 
-              <Callout as="p">A KendoReact Demo Application</Callout>
+              <Callout as="p">Currently using React {React.version}</Callout>
             </div>
           </div>
       </Frame>

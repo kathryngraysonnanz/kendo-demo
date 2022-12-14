@@ -105,7 +105,7 @@ const starting = new Date(2022, 1, 30);
 
     return (
       <Frame>
-        <div class="schedule-wrapper">
+        <div className="schedule-wrapper">
         <Helmet><title>Schedule – LKARS</title></Helmet>
         <h1>Your Tasks</h1>
         <TaskBoard columnData={columnsData} taskData={resultTasks} priorities={priorities} onChange={onChangeHandler} column={Column} card={Card} style={{ height: '700px'}} tabIndex={0}>

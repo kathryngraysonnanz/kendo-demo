@@ -6,7 +6,6 @@ import {
   ExpansionPanelContent,
 } from "@progress/kendo-react-layout";
 import { Reveal } from "@progress/kendo-react-animation";
-import { Barcode, QRCode } from "@progress/kendo-react-barcodes";
 import { Card } from "@progress/kendo-react-layout";
 import {Helmet} from "react-helmet";
 import './settings.scss';
@@ -15,17 +14,9 @@ export default function Settings() {
 
   const [expanded, setExpanded] = React.useState("Color");
 
-  const overlay = {
-    type: "image",
-    imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Delta-shield.svg/100px-Delta-shield.svg.png",
-    width: 30,
-    height: 50,
-  };
-
     return (
       <Frame>
-        <div class="settings-wrapper">
+        <div className="settings-wrapper">
         <Helmet><title>Settings – LKARS</title></Helmet>
           <h1>Welcome</h1>
           <Card style={{
@@ -34,22 +25,15 @@ export default function Settings() {
                 width: "100%",
                 maxWidth: "500px"
               }}>
-              <div class="flex">
+              <div className="flex">
                 <div>
                   <h1>Name: Kathryn Janeway</h1>
                   <h2>Rank: Captain</h2>
                   <h3>Clearance level: Alpha</h3>
                 </div>
-                 <QRCode
-                  style={{width: "100px"}}
-                  value="https://memory-alpha.fandom.com/wiki/Kathryn_Janeway"
-                  errorCorrection="M"
-                  overlay={overlay}
-                  color="#cc88ff"
-                />
+
             </div>
-          {/* <Barcode type="EAN8" value="2346722" renderAs="svg" /> */}
-          <Barcode type="POSTNET" value="11234" height={100} renderAs="canvas"/>
+
           </Card>
           <br/><br/>
           <ExpansionPanel
@@ -65,7 +49,7 @@ export default function Settings() {
             <Reveal>
               {expanded === "color" && (
                 <ExpansionPanelContent>
-                  <div class="colorpicker">
+                  <div className="colorpicker">
                     <p>This color will be used to identify you to others in the LKARS system</p>
                     <FlatColorPicker />
                   </div>

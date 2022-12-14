@@ -22,7 +22,7 @@ export default function AstronomicalLog() {
 
   return (
      <Frame>
-        <div class="manifest-wrapper">
+        <div className="manifest-wrapper">
         <Helmet>
           <title>Astrometrics – LKARS</title>
         </Helmet>
