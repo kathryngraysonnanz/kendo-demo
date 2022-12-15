@@ -1,5 +1,7 @@
 import React from 'react';
 import Frame from '../frame'
+// import LoginRefs from '../login_refs'
+import LoginAutofocus from '../login_autofocus'
 import { FlatColorPicker } from "@progress/kendo-react-inputs";
 import {
   ExpansionPanel,
@@ -20,7 +22,7 @@ export default function Settings() {
         <Helmet><title>Settings – LKARS</title></Helmet>
           <h1>Welcome</h1>
           <Card style={{
-                backgroundColor: "white",
+                backgroundColor: "#666688",
                 padding: "10px",
                 width: "100%",
                 maxWidth: "500px"
@@ -31,9 +33,8 @@ export default function Settings() {
                   <h2>Rank: Captain</h2>
                   <h3>Clearance level: Alpha</h3>
                 </div>
-
             </div>
-
+            <LoginAutofocus/>
           </Card>
           <br/><br/>
           <ExpansionPanel
