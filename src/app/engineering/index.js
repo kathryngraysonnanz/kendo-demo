@@ -2,6 +2,8 @@ import * as React from 'react';
 import Frame from '../frame'
 import { GridLayout, GridLayoutItem, ActionSheet } from "@progress/kendo-react-layout";
 import { Button } from '@progress/kendo-react-buttons';
+import { PDFViewer } from "@progress/kendo-react-pdf-viewer";
+import { SampleFileBase64 } from "./pdf_base64";
 import Gauge from './gauge'
 import Heatmap from './heatmap'
 import Pivot from './pivot'
@@ -44,8 +46,8 @@ function Engineering() {
                { height: 70 },
                { height: 150 },
                { height: 150 },
-               { height: 100 },
-               {height: 200}
+               { height: 350 },
+               { height: 250}
              ]}
              cols={[
                { width: '32%' },
@@ -70,12 +72,19 @@ function Engineering() {
               <Gauge/>
             </GridLayoutItem>
 
-            <GridLayoutItem row={3} col={1} colSpan={3} rowSpan={2} >
+            <GridLayoutItem row={3} col={1} colSpan={3} rowspan={2}>
+              <PDFViewer
+                data={SampleFileBase64}
+                style={{ height: 500}}
+              />
+            </GridLayoutItem>
+
+            <GridLayoutItem row={5} col={1} colSpan={3} rowSpan={2} >
               <h2>Subinterlink Power Prioritization</h2>
               <DragDrop/>
             </GridLayoutItem>
 
-            <GridLayoutItem row={5} col={1} colSpan={3} rowSpan={3} >
+            <GridLayoutItem row={7} col={1} colSpan={3} rowSpan={3} >
               <div className="pivot-wrapper">
                 <h2>Maintenance Cost By Ship</h2>
                  <Pivot/>
