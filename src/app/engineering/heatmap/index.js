@@ -24,7 +24,7 @@ export default function Heatmap() {
   return (
     <Chart style={{ width: "100%", height: "80%"}}>
       <ChartSeries>
-       <ChartSeriesItem type="heatmap" data={data} color="#7788ff" labels={{ visible: false }}
+       <ChartSeriesItem type="heatmap" data={data} color="#ffaa90" labels={{ visible: false }}
        markers={{ type: "circle", border: { width: 2} }}/>
        </ChartSeries>
        <ChartYAxis>
