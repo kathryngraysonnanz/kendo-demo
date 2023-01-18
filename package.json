@@ -22,7 +22,7 @@
     "@progress/kendo-react-indicators": "^5.0.0",
     "@progress/kendo-react-inputs": "^5.0.0",
     "@progress/kendo-react-intl": "^5.5.0",
-    "@progress/kendo-react-layout": "^5.0.0",
+    "@progress/kendo-react-layout": "^5.10.0",
     "@progress/kendo-react-map": "^5.3.0",
     "@progress/kendo-react-pivotgrid": "^5.0.0",
     "@progress/kendo-react-progressbars": "^5.0.0",

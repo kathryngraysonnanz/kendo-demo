@@ -38,4 +38,4 @@ import { DroppableBox } from "./droppable-box";
         </DroppableBox>
       </DragAndDrop>
     </div>)
-  };
+  }

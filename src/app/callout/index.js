@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './callout.scss';
 
 export default function Callout(props) {

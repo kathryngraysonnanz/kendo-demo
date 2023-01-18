@@ -58,7 +58,7 @@ export default function Manifest() {
   return (
 
     <Frame>
-    <div class="manifest-wrapper">
+    <div className="manifest-wrapper">
     <Helmet><title>Crew Manifest – LKARS</title></Helmet>
       <h1>Crew manifest</h1>
       <h2>USS Voyager (NCC-74656-J)</h2>

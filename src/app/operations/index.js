@@ -3,8 +3,7 @@ import Frame from '../frame'
 import { Popover, PopoverActionsBar } from "@progress/kendo-react-tooltip";
 import './settings.scss';
 import { Button } from "@progress/kendo-react-buttons";
-import { ArcGauge } from '@progress/kendo-react-gauges';
-import { Map, MapLayers, MapShapeLayer, MapTileLayer, MapMarkerLayer } from '@progress/kendo-react-map';
+import { Map, MapLayers, MapTileLayer, MapMarkerLayer } from '@progress/kendo-react-map';
 import {Helmet} from "react-helmet";
 
 export default function Operations() {
@@ -37,7 +36,7 @@ const markers = [{
           <h1>Current Heading: 351-mark-10</h1>
 
 
-            <iframe className="viewscreen" width="98%" height="350" scrolling="no"  src="https://virtualsky.lco.global/embed/index.html?longitude=-119.86286000000001&latitude=34.4326&projection=equirectangular&cardinalpoints=false&showplanetlabels=false&showdate=false&showposition=false"></iframe>
+            <iframe title="ops-screen" className="viewscreen" width="98%" height="350" scrolling="no"  src="https://virtualsky.lco.global/embed/index.html?longitude=-119.86286000000001&latitude=34.4326&projection=equirectangular&cardinalpoints=false&showplanetlabels=false&showdate=false&showposition=false"></iframe>
             <Button
               onClick={() => setShow(!show)}
               ref={anchor}

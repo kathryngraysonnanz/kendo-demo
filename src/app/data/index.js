@@ -88,7 +88,7 @@ render () {
   return (
     <Frame>
       <Helmet><title>Data - LKARS</title></Helmet>
-      <div class="data-wrapper">
+      <div className="data-wrapper">
         <h1>Data Bank</h1>
         <Breadcrumb
           data={this.state.data}
@@ -99,7 +99,7 @@ render () {
         <StackLayout orientation={"vertical"} align={{horizontal: 'start', vertical: 'top'}} gap={50}>
           <Tooltip anchorElement="pointer" position="bottom" parentTitle={true}>
             <svg height="162.147" width="100.041" version="1.1">
-              <title>Badgey says: "Can I help you find something?"</title>
+              <title>Badgey says: Can I help you find something?</title>
               <g transform="translate(-299.9795,-451.28869)">
                 <path style={{enableBackground: 'accumulate', color: 'black'}} d="M350.6714,451.2887c-36.3264,51.9337-48.7244,103.6278-50.6919,162.147,11.98671-11.7398,50.14366-58.4529,63.7557-61.16914,9.08363-1.81174,19.47003,12.64405,36.2853,49.08336-2.19193-50.75678-22.49534-116.4719-49.34906-150.0612z"  fill="#f9f9f9"/>
                 <path style={{enableBackground: 'accumulate', color: 'black'}} d="m350.6579,451.2887c-35.59494,50.64347-48.41479,99.37433-50.34267,156.4396,11.74539-11.44722,49.13407-57.00074,62.47212-59.64864,8.90069-1.76736,16.72784,8.97178,35.21875,44.1712-4.49726-49.49654-25.06368-108.5433-47.3482-140.9622z" fill="#ffb634"/>

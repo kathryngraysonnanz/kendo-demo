@@ -47,4 +47,4 @@ export default function MultiSelect() {
         onExpandChange={onExpandChange}
    />
  )
-};
+}

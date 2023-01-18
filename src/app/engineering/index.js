@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Frame from '../frame'
-import { GridLayout, GridLayoutItem } from "@progress/kendo-react-layout";
+import { GridLayout, GridLayoutItem, ActionSheet } from "@progress/kendo-react-layout";
+import { Button } from '@progress/kendo-react-buttons';
 import Gauge from './gauge'
 import Heatmap from './heatmap'
 import Pivot from './pivot'
@@ -9,9 +10,22 @@ import {Helmet} from "react-helmet";
 import './engineering.scss'
 
 function Engineering() {
+
+  const title = 'Select item';
+  const [open, setOpen] = React.useState(false);
+  const openHandler = () => {
+    setOpen(true);
+  };
+  const handleOverlayClick = () => {
+    setOpen(false);
+  };
+  const handleItemClick = () => {
+    setOpen(false);
+  };
+
     return (
       <Frame>
-        <div class='engineering-wrapper'>
+        <div className='engineering-wrapper'>
         <Helmet><title>Engineering – LKARS</title></Helmet>
         <h1>Engineering Console</h1>
           <GridLayout
@@ -28,6 +42,11 @@ function Engineering() {
              ]}
           >
             <GridLayoutItem row={1} col={1} colSpan={2} rowSpan={1}>
+            <Button onClick={openHandler}>
+              OPEN ACTION SHEET
+            </Button>
+            {open && <ActionSheet title={title} items={items} onOverlayClick={handleOverlayClick} onItemClick={handleItemClick} />}
+
               <h2>Polarity Reversals by Stardate</h2>
               <Heatmap/>
             </GridLayoutItem>
@@ -43,7 +62,7 @@ function Engineering() {
             </GridLayoutItem>
 
             <GridLayoutItem row={4} col={1} colSpan={3} rowSpan={3} >
-              <div class="pivot-wrapper">
+              <div className="pivot-wrapper">
                 <h2>Maintenance Cost By Ship</h2>
                  <Pivot/>
               </div>
