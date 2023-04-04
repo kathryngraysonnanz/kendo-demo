@@ -43,6 +43,7 @@
     "@testing-library/user-event": "^13.5.0",
     "ajv": "^8.11.0",
     "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^5.0.0",
     "hammerjs": "^2.0.8",
     "node-sass": "^7.0.1",
     "npm-check-updates": "^12.1.0",
