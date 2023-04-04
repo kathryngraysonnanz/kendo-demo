@@ -24,6 +24,9 @@ export class NavMenu extends Component {
   <Link to='/data'>Data Bank</Link>
   </div>
   <div className="menu">
+  <Link to='/shoreleave'>Request Shore Leave</Link>
+  </div>
+  <div className="menu">
   <Link to='/schedule'>Schedule</Link>
   </div>
 </nav>

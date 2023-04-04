@@ -12,6 +12,7 @@ import Schedule from '../schedule'
 import Manifest from '../manifest'
 import Settings from '../settings'
 import Operations from '../operations'
+import ShoreLeave from '../shoreleave'
 
 export default function App() {
   return (
@@ -31,6 +32,8 @@ export default function App() {
             element={<Settings/>} />
         <Route path="/ops"
             element={<Operations/>} />
+        <Route path="/shoreleave"
+            element={<ShoreLeave/>} />
         <Route path="/" element={<Home/>} />
       </Routes>
     </Router>

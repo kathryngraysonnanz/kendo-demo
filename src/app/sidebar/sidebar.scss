@@ -42,12 +42,12 @@
 }
 
 .left-menu > div:nth-child(n+6) {
-  background-color: var(--lcars-red);
+  background-color: var(--lcars-lavender);
 }
 
 .left-menu > div:last-child {
   background-color: var(--lcars-lavender);
-  grid-row: 7 / 10;
+  grid-row: 8 / 10;
   display: flex;
 
   a {
