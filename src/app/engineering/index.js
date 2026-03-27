@@ -6,8 +6,8 @@ import { PDFViewer } from "@progress/kendo-react-pdf-viewer";
 import { SampleFileBase64 } from "./pdf_base64";
 import Gauge from './gauge'
 import Heatmap from './heatmap'
-import Pivot from './pivot'
 import DragDrop from './drag-drop'
+import KendoSankey from './sankey';
 import {Helmet} from "react-helmet";
 import './engineering.scss'
 
@@ -73,10 +73,8 @@ function Engineering() {
             </GridLayoutItem>
 
             <GridLayoutItem row={3} col={1} colSpan={3} rowspan={2}>
-              <PDFViewer
-                data={SampleFileBase64}
-                style={{ height: 500}}
-              />
+            <h2>Energy Distrobution Breakdown</h2>
+              <KendoSankey/>
             </GridLayoutItem>
 
             <GridLayoutItem row={5} col={1} colSpan={3} rowSpan={2} >
@@ -85,10 +83,10 @@ function Engineering() {
             </GridLayoutItem>
 
             <GridLayoutItem row={7} col={1} colSpan={3} rowSpan={3} >
-              <div className="pivot-wrapper">
-                <h2>Maintenance Cost By Ship</h2>
-                 <Pivot/>
-              </div>
+              <PDFViewer
+                  data={SampleFileBase64}
+                  style={{ height: 500}}
+                />
             </GridLayoutItem>
 
         </GridLayout>

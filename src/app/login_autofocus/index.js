@@ -11,7 +11,7 @@ export default function LoginAutofocus() {
     <br/>
     <label>
        Password:
-       <input name="user" type="password" autoFocus />
+       <input name="user" type="password"  />
     </label>
   </form>
   )

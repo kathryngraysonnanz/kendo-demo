@@ -36815,3 +36815,12 @@ div.k-scrollview.k-scrollview-light .k-scrollview-nav-wrap {
 a {
   text-transform: uppercase;
 }
+
+
+.k-table-td {
+    color: white !important;
+}
+
+.k-textarea textarea {
+    height: 25px;
+}

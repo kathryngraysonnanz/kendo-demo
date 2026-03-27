@@ -71,7 +71,7 @@ export default function Home() {
               <Typography.p>Library KendoReact Access/Retrieval System</Typography.p>
               <Typography.h2>Systems online</Typography.h2>
 
-              <Callout as="p">Currently using React {React.version}</Callout>
+              <Callout as="h1">Currently using React {React.version}</Callout>
             </div>
           </div>
       </Frame>
